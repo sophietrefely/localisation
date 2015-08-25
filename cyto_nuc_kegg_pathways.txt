@@ -1,0 +1,5 @@
+hsa:2729	path:hsa00480
+hsa:2729	path:hsa01100
+hsa:8379	path:hsa04110
+hsa:8379	path:hsa04914
+hsa:8379	path:hsa05203

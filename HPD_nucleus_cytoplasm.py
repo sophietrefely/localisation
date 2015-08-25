@@ -89,22 +89,10 @@ for entry in location_list:
     HPA_file.write(item_to_write)
 HPA_file.close()    #There are 8857 genes
 
-
-#use REACTOME for enrichment analysis:
-#http://www.reactome.org/PathwayBrowser
-#entered 'cyto_nuc_ENSG_list' IDs
-#reactome returned 3 files:
-#'cyto_nuc_results.csv' - the overrepesentation pathway analysis
-#'cyto_nuc_mapping.csv' - the mapping of ENSBL to uniprot ID
-#'cyto_nuc_not_found.csv' - 714 IDs not found! (out of 1196! = no good)
-#NOTE: there is no place to enter the background
-#the background is all genes in HPA 'subcellular_location.csv'
-#there is no way to enter the background for this analysis
-#therefore useless!
-
 #Using KEGG pathways:
-#1. converted ENSMBL IDs to KEGG genes using the biodbnet
+#1. convert ENSMBL IDs to KEGG genes using the biodbnet
 #http://biodbnet.abcc.ncifcrf.gov/db/db2db.php
+#saved files as: cyto_nuc_ENSG2KEGG.txt
 #extract list of kegg ids:
 cyto_nuc_kegg_list = []
 path_to_cyto_kegg = 'cyto_nuc_ENSG2KEGG.txt'
@@ -118,21 +106,85 @@ for line in cyto_kegg_file:
     strip_kegg_id = kegg_id.rstrip(';') #strip off the ';' from any with more than 1 kegg ID
     if strip_kegg_id != '-': #remove ENSG not converted to KEGG ids
         cyto_nuc_kegg_list.append(strip_kegg_id)
-print(cyto_nuc_kegg_list[0:9])
 cyto_nuc_kegg_list = cyto_nuc_kegg_list[1:] #line[0] is header
-print(cyto_nuc_kegg_list[0:9])
 print('cyto_nuc_kegg_list:', len(cyto_nuc_kegg_list))
+#list looks like this:
+#['hsa:2729', 'hsa:81887', 'hsa:8379', 'hsa:79007', etc..]
 
+#extract list of kegg ids from background 'HPA_ENSG2KEGG_compete'
+HPA_background_kegg_list = []
+path_to_HPA_kegg = 'HPA_ENSG2KEGG_compete.txt'
+HPA_kegg_file = open(path_to_HPA_kegg, 'rU')
+for line in HPA_kegg_file:
+    # split creates a list out of the line
+    # [0] is gene Ensemble gene identifier (ENSG), [1] is KEGG ID
+    stripped_line = line.rstrip()
+    split_line = stripped_line.split()
+    kegg_id = split_line[1]
+    strip_kegg_id = kegg_id.rstrip(';') #strip off the ';' from any with more than 1 kegg ID
+    if strip_kegg_id != '-': #remove ENSG not converted to KEGG ids
+        HPA_background_kegg_list.append(strip_kegg_id)
+HPA_background_kegg_list = HPA_background_kegg_list[1:] #line[0] is header
+print('HPA_background_kegg_list:', len(HPA_background_kegg_list))
 
-
-    
 #2.find the pathways each gene belongs to using the KEGG API:
 #http://rest.kegg.jp/link/pathway/'gene ID eg hsa:10458'
-#add path:'hsa04520', hsa04810' to the entry
-#for each path in the cyto nuc list, find total number of entries
-#find amount in HSA_complete list. Find amount in cyto_nuc_list.
+import urllib.request #allows python to access url 
+path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
+cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'w')#write to file
+
+for gene in cyto_nuc_kegg_list[0:6]:
+    kegg_gene = str(gene)
+    url = "http://rest.kegg.jp/link/pathway/" + kegg_gene
+    url_read = urllib.request.urlopen(url).read()   #read url output
+    item_to_write = str(url_read, encoding = 'utf8')
+    #see http://stackoverflow.com/questions/540342/python-3-0-urllib-parse-error-type-str-doesnt-support-the-buffer-api
+    if 'hsa' in item_to_write:#remove empty lines
+        cyto_nuc_pathways.write(item_to_write)
+cyto_nuc_pathways.close()
+#make set of find unique pathways
+cyto_nuc_pathway_set = set()
+path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
+cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'rU')
+for line in cyto_nuc_pathways:
+    # split creates a list out of the line
+    # [0] is KEGG gene ID, [1] is KEGG pathway ID
+    stripped_line = line.rstrip() #remove '\n'
+    split_line = stripped_line.split('\t') #tab separated
+    pathway = split_line[1]
+    pathway_i = pathway.lstrip('path')#remove prefix to pathway id
+    pathway_id = pathway_i.lstrip(':')
+    cyto_nuc_pathway_set.add(pathway_id)
+print('cyto_nuc_pathway_set:', len(cyto_nuc_pathway_set))
+
+#3.for each path in the cyto_nuc_pathway_set, find genes in the pathway
+path_to_pathways = 'cyto_nuc_unique_pathways.txt'
+cyto_nuc_unique = open(path_to_pathways, 'w')
+
+for entry in cyto_nuc_pathway_set:
+    pathway = str(entry)
+    url = "http://togows.dbcls.jp/entry/pathway/"+pathway+"/genes.json"
+    url_read = urllib.request.urlopen(url).read()   #read url output
+    item_str = str(url_read, encoding = 'utf8')
+    item_strip = item_str.lstrip("[\n  {\n").rstrip(" }\n]")
+    if 'KO' in item_strip: #get rid of empty pathway entries
+        item_to_write = pathway+'\n'+item_strip+'\n'
+        cyto_nuc_unique.write(item_to_write)
+cyto_nuc_unique.close()
+#entries are in file like this:
+"""hsa04914   "5241": "PGR; progesterone receptor [KO:K08556]",
+    "5295": "PIK3R1; phosphoinositide-3-kinase, regulatory subunit 1 (alpha) [KO:K02649]",
+    "23533": "PIK3R5; phosphoinositide-3-kinase, regulatory subunit 5 [KO:K02649]",
+    "5296": "PIK3R2; phosphoinositide-3-kinase, regulatory subunit 2 (beta) [KO:K02649]",
+    "8503": "PIK3R3; phosphoinositide-3-kinase, regulatory subunit 3 (gamma) [KO:K02649]",
+etc"""
 
 
+#4.for each pathway find amount in HSA_complete_list. Find amount in cyto_nuc_list.
+path_to_pathways = 'cyto_nuc_unique_pathways.txt'
+cyto_nuc_unique = open(path_to_pathways, 'rU')
 
+for entry in cyto_nuc_unique:
+    print(entry)
 
 
