@@ -111,9 +111,9 @@ print('cyto_nuc_kegg_list:', len(cyto_nuc_kegg_list))
 #list looks like this:
 #['hsa:2729', 'hsa:81887', 'hsa:8379', 'hsa:79007', etc..]
 
-#extract list of kegg ids from background 'HPA_ENSG2KEGG_compete'
+#extract list of kegg ids from background 'HPA_ENSG2KEGG_complete'
 HPA_background_kegg_list = []
-path_to_HPA_kegg = 'HPA_ENSG2KEGG_compete.txt'
+path_to_HPA_kegg = 'HPA_ENSG2KEGG_complete.txt'
 HPA_kegg_file = open(path_to_HPA_kegg, 'rU')
 for line in HPA_kegg_file:
     # split creates a list out of the line
@@ -133,7 +133,7 @@ import urllib.request #allows python to access url
 path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
 cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'w')#write to file
 
-for gene in cyto_nuc_kegg_list[0:6]:
+for gene in cyto_nuc_kegg_list[0:4]:
     kegg_gene = str(gene)
     url = "http://rest.kegg.jp/link/pathway/" + kegg_gene
     url_read = urllib.request.urlopen(url).read()   #read url output
@@ -158,8 +158,10 @@ for line in cyto_nuc_pathways:
 print('cyto_nuc_pathway_set:', len(cyto_nuc_pathway_set))
 
 #3.for each path in the cyto_nuc_pathway_set, find genes in the pathway
-path_to_pathways = 'cyto_nuc_unique_pathways.txt'
-cyto_nuc_unique = open(path_to_pathways, 'w')
+#make dictionary-like file with pathway1\t[gene1, gene2]\n
+                               #pathway2\t[gene,gene2,gene3]\n...
+path_to_cyto_nuc_path_genes = 'cyto_nuc_pathways_genes.txt' 
+pathway_genes = open(path_to_cyto_nuc_path_genes, 'w')#write to file
 
 for entry in cyto_nuc_pathway_set:
     pathway = str(entry)
@@ -167,24 +169,66 @@ for entry in cyto_nuc_pathway_set:
     url_read = urllib.request.urlopen(url).read()   #read url output
     item_str = str(url_read, encoding = 'utf8')
     item_strip = item_str.lstrip("[\n  {\n").rstrip(" }\n]")
-    if 'KO' in item_strip: #get rid of empty pathway entries
-        item_to_write = pathway+'\n'+item_strip+'\n'
-        cyto_nuc_unique.write(item_to_write)
-cyto_nuc_unique.close()
-#entries are in file like this:
-"""hsa04914   "5241": "PGR; progesterone receptor [KO:K08556]",
-    "5295": "PIK3R1; phosphoinositide-3-kinase, regulatory subunit 1 (alpha) [KO:K02649]",
-    "23533": "PIK3R5; phosphoinositide-3-kinase, regulatory subunit 5 [KO:K02649]",
-    "5296": "PIK3R2; phosphoinositide-3-kinase, regulatory subunit 2 (beta) [KO:K02649]",
-    "8503": "PIK3R3; phosphoinositide-3-kinase, regulatory subunit 3 (gamma) [KO:K02649]",
-etc"""
+    item_list = item_strip.split(',\n')
+    #genes are separated by ',\n'
+    #entry in list looks like:
+    #'    "23533": "PIK3R5; phosphoinositide-3-kinase, regulatory subunit 5 [KO:K02649]"'
+    gene_id_list = []
+    for entry in item_list:
+        entry_list = entry.split(':') #to separate gene id number from description
+        gene = entry_list[0]
+        gene_str = gene.strip().rstrip('"').lstrip('"') #strip away blank space on rhs and ""
+        if len(gene_str) >1: #don't add 'hsa:' to empty entries
+            gene_id = 'hsa:'+gene_str #so we will have the right query format for gene id eg 'hsa:23533'
+            gene_id_list.append(gene_id)
+    if len(gene_id_list) >=1: #remove empty pathways
+        gene_id_string = str(gene_id_list)
+        item_to_write = pathway+'\t'+gene_id_string+'\n'
+        pathway_genes.write(item_to_write)
+pathway_genes.close()
 
+#4.for each pathway find amount in HSA_complete_list. Find amount in cyto_nuc_list. Find % cyto_nuc/HSA_complete.
+path_to_cyto_nuc_path_genes = 'cyto_nuc_pathways_genes.txt' 
+pathway_genes = open(path_to_cyto_nuc_path_genes, 'rU')#read
 
-#4.for each pathway find amount in HSA_complete_list. Find amount in cyto_nuc_list.
-path_to_pathways = 'cyto_nuc_unique_pathways.txt'
-cyto_nuc_unique = open(path_to_pathways, 'rU')
+path_to_analysis = 'pathway_analysis.txt'
+pathway_analysis = open(path_to_analysis, 'w')#write
+headers = 'pathway\t# total genes in pathway\tgenes in cyto_nuc\tgenes in background HSA_complete\t%(cyto_nuc/HSA_background)\n'
+pathway_analysis.write(headers)
+for entry in pathway_genes:
+    entry_list1 = entry.split('\t') #entry looks like this: pathway1\t[gene1, gene2]\n
+    pathway = str(entry_list1[0].strip())
+    genes = entry_list1[1]
+    print('genes:', genes)
+    print('type:', type(genes))
+    genes_strip = genes.lstrip('[').rstrip(']')
+    genes_list = genes_strip.split(',')
+    print('genes_list:', genes_list)
+    pathway_len = str(len(genes_list))
+    print('type:', type(genes_list))
 
-for entry in cyto_nuc_unique:
-    print(entry)
+    genes_in_cyto_nuc = []
+    for gene in cyto_nuc_kegg_list: #entries look like 'hsa:2729'
+        if gene in genes_list:
+            print('gene_cyto:', gene)
+            genes_in_cyto_nuc.append(gene)
+    cyto_nuc_len = len(genes_in_cyto_nuc)
+    
+    genes_in_background = []
+    for gene in HPA_background_kegg_list:
+        if gene in genes_list:
+            print('gene_background:', gene)
+            genes_in_background.append(gene)
+    background_len = len(genes_in_background)
+    if background_len >= 1:
+        percent = str((cyto_nuc_len/background_len)*100)
+    else:
+        percent = 'NA'
+    print('genes_in_cyto_nuc:', genes_in_cyto_nuc)
+    print('genes_in_background:', genes_in_background)
+    item_to_write = pathway+'\t'+pathway_len+'\t'+str(genes_in_cyto_nuc)+'\t'+str(genes_in_background)+'\t'+percent+'\n'
+    pathway_analysis.write(item_to_write)
+pathway_analysis.close()
+
 
 

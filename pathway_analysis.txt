@@ -1,0 +1,5 @@
+pathway	# total genes in pathway	genes in cyto_nuc	genes in background HSA_complete	%(cyto_nuc/HSA_background)
+hsa00480	51	[]	[]	NA
+hsa04110	124	[]	[]	NA
+hsa04914	88	[]	[]	NA
+hsa05203	206	[]	[]	NA
