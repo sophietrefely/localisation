@@ -133,7 +133,7 @@ import urllib.request #allows python to access url
 path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
 cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'w')#write to file
 
-for gene in cyto_nuc_kegg_list[0:4]:
+for gene in cyto_nuc_kegg_list:
     kegg_gene = str(gene)
     url = "http://rest.kegg.jp/link/pathway/" + kegg_gene
     url_read = urllib.request.urlopen(url).read()   #read url output
@@ -189,45 +189,43 @@ with open('cyto_nuc_pathways_genes.json', 'w') as outfile:#don't need to file.cl
     outfile.write(dict_as_json) 
 
 
-#4.for each pathway find amount in HSA_complete_list. Find amount in cyto_nuc_list. Find % cyto_nuc/HSA_complete.
+#4.Analyse each pathway to find % cyto_nuc/HSA_complete.
 path_to_analysis = 'pathway_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
 
-headers = 'pathway id\t# total genes in pathway\tgenes in cyto_nuc\tgenes in background HSA_complete\t%(cyto_nuc/HSA_background)\n'
+headers = 'KEGG_pathway_ID\t# genes in pathway\tgenes in cyto_nuc\t#genes in cyto_nuc\tgenes in HSA_background\t#genes in HSA_background\t%(cyto_nuc/HSA_background)\n'
 pathway_analysis.write(headers)
-for entry in cyto_nuc_unique_pathway_list:
-    pathway = str(entry)+'\t'
-    pathway_analysis.write(pathway)
-    import json
-    with open('cyto_nuc_pathways_genes.json') as f:
-        for line in f:
-            theListOnThatLine = json.loads(line) #does opposite to dumps ie turns string back to list
-            print('=========================================================')
-            print(theListOnThatLine)
-            
+
+import json
+with open('cyto_nuc_pathways_genes.json') as f:
+    pathway_dict = json.load(f) #load (not loads, which is for string) does opposite of dumps
+    for pathway_ID in pathway_dict:
+        genes_list = pathway_dict[pathway_ID]
+        pathway_len = len(genes_list)
+        pathway_len_str = str(pathway_len)
+        print(pathway_ID)
+        print(pathway_len)
         
-##    genes_in_cyto_nuc = []
-##    for gene in cyto_nuc_kegg_list: #entries look like 'hsa:2729'
-##        if gene in genes_list:
-##            print('gene_cyto:', gene)
-##            genes_in_cyto_nuc.append(gene)
-##    cyto_nuc_len = len(genes_in_cyto_nuc)
-##    
-##    genes_in_background = []
-##    for gene in HPA_background_kegg_list:
-##        if gene in genes_list:
-##            print('gene_background:', gene)
-##            genes_in_background.append(gene)
-##    background_len = len(genes_in_background)
-##    if background_len >= 1:
-##        percent = str((cyto_nuc_len/background_len)*100)
-##    else:
-##        percent = 'NA'
-##    print('genes_in_cyto_nuc:', genes_in_cyto_nuc)
-##    print('genes_in_background:', genes_in_background)
-##    item_to_write = pathway+'\t'+pathway_len+'\t'+str(genes_in_cyto_nuc)+'\t'+str(genes_in_background)+'\t'+percent+'\n'
-##    pathway_analysis.write(item_to_write)
-##pathway_analysis.close()
+        genes_in_cyto_nuc = []
+        for gene in cyto_nuc_kegg_list: #entries look like 'hsa:2729'
+            if gene in genes_list:
+                genes_in_cyto_nuc.append(gene)
+        cyto_nuc_len = len(genes_in_cyto_nuc)
+        cyto_nuc_len_str = str(cyto_nuc_len)
+        genes_in_cyto_nuc_str = str(genes_in_cyto_nuc)
+
+        genes_in_background = []
+        for gene in HPA_background_kegg_list:
+            if gene in genes_list:
+                genes_in_background.append(gene)
+        background_len = len(genes_in_background)
+        background_len_str = str(background_len)
+        genes_in_background_str = str(genes_in_background)
+        percent = str((cyto_nuc_len/background_len)*100)
+
+        item_to_write = pathway_ID+'\t'+pathway_len_str+'\t'+genes_in_cyto_nuc_str+'\t'+cyto_nuc_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
+        pathway_analysis.write(item_to_write)
+    pathway_analysis.close()
 
 
 
