@@ -89,7 +89,7 @@ for entry in location_list:
     HPA_file.write(item_to_write)
 HPA_file.close()    #There are 8857 genes
 
-#Using KEGG pathways:
+
 #1. convert ENSMBL IDs to KEGG genes using the biodbnet
 #http://biodbnet.abcc.ncifcrf.gov/db/db2db.php
 #saved files as: cyto_nuc_ENSG2KEGG.txt
@@ -133,7 +133,7 @@ import urllib.request #allows python to access url
 path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
 cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'w')#write to file
 
-for gene in cyto_nuc_kegg_list:
+for gene in cyto_nuc_kegg_list[0:3]:
     kegg_gene = str(gene)
     url = "http://rest.kegg.jp/link/pathway/" + kegg_gene
     url_read = urllib.request.urlopen(url).read()   #read url output
@@ -193,7 +193,7 @@ with open('cyto_nuc_pathways_genes.json', 'w') as outfile:#don't need to file.cl
 path_to_analysis = 'pathway_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
 
-headers = 'KEGG_pathway_ID\tpathway_name\t# genes in pathway\tgenes in cyto_nuc\t#genes in cyto_nuc\tgenes in HSA_background\t#genes in HSA_background\t%(cyto_nuc/HSA_background)\n'
+headers = 'KEGG_Primary_class\tKEGG_secondary_class\tKEGG_pathway_ID\tpathway_name\t# genes in pathway\tgenes in cyto_nuc\t#genes in cyto_nuc\tgenes in HSA_background\t#genes in HSA_background\t%(cyto_nuc/HSA_background)\n'
 pathway_analysis.write(headers)
 
 import json
@@ -205,13 +205,23 @@ with open('cyto_nuc_pathways_genes.json') as f:
         url_read = urllib.request.urlopen(url).read()   #read url output
         item_str = str(url_read, encoding = 'utf8')
         pathway_name = item_str.lstrip("[\n").rstrip("\n]")
+        print(pathway_name)
+
+        #find pathway class using TOGOWS API
+        class_url = 'http://togows.org/entry/kegg-pathway/'+pathway_ID+'/classes.json'
+        class_url_response = urllib.request.urlopen(class_url).read()   #read url output
+        class_url_str = str(class_url_response, encoding = 'utf8') 
+        class_json = json.loads(class_url_str) #json looks like: [['Organismal Systems', 'Endocrine system']]
+        class_list = class_json[0] #take list within list
+        primary_class = class_list[0]
+        secondary_class = class_list[1]
         
         genes_list = pathway_dict[pathway_ID]
         pathway_len = len(genes_list)
         pathway_len_str = str(pathway_len)
         print(pathway_ID)
         print(pathway_len)
-        
+        #find cyto_nuc genes in this pathway
         genes_in_cyto_nuc = []
         for gene in cyto_nuc_kegg_list: #entries look like 'hsa:2729'
             if gene in genes_list:
@@ -219,7 +229,7 @@ with open('cyto_nuc_pathways_genes.json') as f:
         cyto_nuc_len = len(genes_in_cyto_nuc)
         cyto_nuc_len_str = str(cyto_nuc_len)
         genes_in_cyto_nuc_str = str(genes_in_cyto_nuc)
-
+        #find background genes in this pathway
         genes_in_background = []
         for gene in HPA_background_kegg_list:
             if gene in genes_list:
@@ -229,7 +239,7 @@ with open('cyto_nuc_pathways_genes.json') as f:
         genes_in_background_str = str(genes_in_background)
         percent = str((cyto_nuc_len/background_len)*100)
 
-        item_to_write = pathway_ID+'\t'+pathway_name+'\t'+pathway_len_str+'\t'+genes_in_cyto_nuc_str+'\t'+cyto_nuc_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
+        item_to_write = primary_class+'\t'+secondary_class+'\t'+pathway_ID+'\t'+pathway_name+'\t'+pathway_len_str+'\t'+genes_in_cyto_nuc_str+'\t'+cyto_nuc_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
         pathway_analysis.write(item_to_write)
     pathway_analysis.close()
 
