@@ -142,7 +142,7 @@ for gene in cyto_nuc_kegg_list:
     if 'hsa' in item_to_write:#remove empty lines
         cyto_nuc_pathways.write(item_to_write)
 cyto_nuc_pathways.close()
-#make set of find unique pathways
+#make set to be unique pathways
 cyto_nuc_pathway_set = set()
 path_to_cyto_nuc_pathway = 'cyto_nuc_kegg_pathways.txt' 
 cyto_nuc_pathways = open(path_to_cyto_nuc_pathway, 'rU')
@@ -193,13 +193,19 @@ with open('cyto_nuc_pathways_genes.json', 'w') as outfile:#don't need to file.cl
 path_to_analysis = 'pathway_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
 
-headers = 'KEGG_pathway_ID\t# genes in pathway\tgenes in cyto_nuc\t#genes in cyto_nuc\tgenes in HSA_background\t#genes in HSA_background\t%(cyto_nuc/HSA_background)\n'
+headers = 'KEGG_pathway_ID\tpathway_name\t# genes in pathway\tgenes in cyto_nuc\t#genes in cyto_nuc\tgenes in HSA_background\t#genes in HSA_background\t%(cyto_nuc/HSA_background)\n'
 pathway_analysis.write(headers)
 
 import json
 with open('cyto_nuc_pathways_genes.json') as f:
     pathway_dict = json.load(f) #load (not loads, which is for string) does opposite of dumps
     for pathway_ID in pathway_dict:
+        #find pathway name using TOGOWS API
+        url = 'http://togows.org/entry/kegg-pathway/'+pathway_ID+'/name.json'
+        url_read = urllib.request.urlopen(url).read()   #read url output
+        item_str = str(url_read, encoding = 'utf8')
+        pathway_name = item_str.lstrip("[\n").rstrip("\n]")
+        
         genes_list = pathway_dict[pathway_ID]
         pathway_len = len(genes_list)
         pathway_len_str = str(pathway_len)
@@ -223,7 +229,7 @@ with open('cyto_nuc_pathways_genes.json') as f:
         genes_in_background_str = str(genes_in_background)
         percent = str((cyto_nuc_len/background_len)*100)
 
-        item_to_write = pathway_ID+'\t'+pathway_len_str+'\t'+genes_in_cyto_nuc_str+'\t'+cyto_nuc_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
+        item_to_write = pathway_ID+'\t'+pathway_name+'\t'+pathway_len_str+'\t'+genes_in_cyto_nuc_str+'\t'+cyto_nuc_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
         pathway_analysis.write(item_to_write)
     pathway_analysis.close()
 
