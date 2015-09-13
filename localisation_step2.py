@@ -21,6 +21,13 @@
 
 #NOTE remove title headings in excel
 
+# NOTE(peter) this caches requests made with the 'requests' library in a local database
+import requests
+import requests_cache
+
+requests_cache.install_cache('stored_geneid_requests')
+
+
 #extract list of kegg ids from chosen list:
 chosen_kegg_list = []
 path_to_chosen = 'cyto_no_nuc_ENSG2KEGG.txt'
@@ -63,12 +70,13 @@ chosen_kegg_pathways = open(path_to_chosen_kegg_pathways, 'w')#write to file
 for gene in chosen_kegg_list:
     kegg_gene = str(gene)
     url = "http://rest.kegg.jp/link/pathway/" + kegg_gene
-    url_read = urllib.request.urlopen(url).read()   #read url output
-    item_to_write = str(url_read, encoding = 'utf8')
+    url_read = requests.get(url)   #read url output
+    item_to_write = url_read.text
     #see http://stackoverflow.com/questions/540342/python-3-0-urllib-parse-error-type-str-doesnt-support-the-buffer-api
     if 'hsa' in item_to_write:#remove empty lines
         chosen_kegg_pathways.write(item_to_write)
 chosen_kegg_pathways.close()
+
 #make set to be unique pathways
 chosen_pathway_set = set()
 path_to_chosen_pathways = 'cyto_no_nuc_kegg_pathways.txt' 
@@ -95,8 +103,8 @@ with open('chosen_pathways_genes.json', 'w') as outfile:#don't need to file.clos
     for entry in chosen_unique_pathway_list:
         pathway = str(entry)
         url = "http://togows.dbcls.jp/entry/pathway/"+pathway+"/genes.json"
-        url_read = urllib.request.urlopen(url).read()   #read url output
-        item_str = str(url_read, encoding = 'utf8')
+        url_read = requests.get(url)  #read url output
+        item_str = url_read.text
         item_strip = item_str.lstrip("[\n  {\n").rstrip(" }\n]")
         item_list = item_strip.split(',\n')
         #genes are separated by ',\n'
@@ -112,7 +120,7 @@ with open('chosen_pathways_genes.json', 'w') as outfile:#don't need to file.clos
                 gene_id_list.append(gene_id)           
             if len(gene_id_list) >=1: #remove empty pathways
                 pathway_gene_dict[pathway] = gene_id_list
-    dict_as_json = json.dumps(pathway_gene_id_dict) #dumps turns list into a json string
+    dict_as_json = json.dumps(pathway_gene_dict) #dumps turns list into a json string
     outfile.write(dict_as_json) 
 
 
@@ -129,15 +137,15 @@ with open('cyto_nuc_pathways_genes.json') as f:
     for pathway_ID in pathway_dict:
         #find pathway name using TOGOWS API
         url = 'http://togows.org/entry/kegg-pathway/'+pathway_ID+'/name.json'
-        url_read = urllib.request.urlopen(url).read()   #read url output
-        item_str = str(url_read, encoding = 'utf8')
+        url_read = requests.get(url)  #read url output
+        item_str = url_read.text
         pathway_name = item_str.lstrip("[\n").rstrip("\n]")
         print(pathway_name)
 
         #find pathway class using TOGOWS API
         class_url = 'http://togows.org/entry/kegg-pathway/'+pathway_ID+'/classes.json'
-        class_url_response = urllib.request.urlopen(class_url).read()   #read url output
-        class_url_str = str(class_url_response, encoding = 'utf8') 
+        class_url_response = requests.get(class_url)  #read url output
+        class_url_str = class_url_response.text 
         class_json = json.loads(class_url_str) #json looks like: [['Organismal Systems', 'Endocrine system']]
         class_list = class_json[0] #take list within list
         primary_class = class_list[0]
