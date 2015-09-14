@@ -2,8 +2,8 @@
 #only the subset being analysed as  'xxxx_ENSG2KEGG.txt' needs to be changed at the very top.
 #background HPA_ENSG2KEGG_complete.txt remains the same.
 #this step produces 3 files:
-#cyto_nuc_kegg_pathways.txt
-#cyto_nuc_pathway_genes.json
+#chosen_pathways.txt
+#chosen_pathway_genes.json
 #pathway_analysis.txt
 
 #convert ENSMBL IDs in 'ENSG_list.csv' to KEGG genes using the biodbnet
@@ -19,7 +19,9 @@
 #cat biodb_first.txt biodb_second.txt biodb_third.txt | sort | uniq | wc
 #named concatenated file 'HPA_ENSG2KEGG.txt'
 
-#NOTE remove title headings in excel
+#NOTE: Alternatively, could use the mygene converter.
+
+#NOTE remove title headings in  'xxxx_ENSG2KEGG.txt' files
 
 # NOTE(peter) this caches requests made with the 'requests' library in a local database
 import requests
@@ -30,7 +32,7 @@ requests_cache.install_cache('stored_geneid_requests')
 
 #extract list of kegg ids from chosen list:
 chosen_kegg_list = []
-path_to_chosen = 'cyto_no_nuc_ENSG2KEGG.txt'
+path_to_chosen = 'nuc_no_cyto_ENSG2KEGG.txt'
 chosen_file = open(path_to_chosen, 'rU')
 for line in chosen_file:
     # split creates a list out of the line
@@ -64,7 +66,7 @@ print('HPA_background_kegg_list:', len(HPA_background_kegg_list), HPA_background
 #2.find the pathways each gene belongs to using the KEGG API:
 #http://rest.kegg.jp/link/pathway/'gene ID eg hsa:10458'
 import urllib.request #allows python to access url 
-path_to_chosen_kegg_pathways = 'cyto_no_nuc_kegg_pathways.txt' 
+path_to_chosen_kegg_pathways = 'chosen_kegg_pathways.txt' 
 chosen_kegg_pathways = open(path_to_chosen_kegg_pathways, 'w')#write to file
 
 for gene in chosen_kegg_list:
@@ -79,7 +81,7 @@ chosen_kegg_pathways.close()
 
 #make set to be unique pathways
 chosen_pathway_set = set()
-path_to_chosen_pathways = 'cyto_no_nuc_kegg_pathways.txt' 
+path_to_chosen_pathways = 'chosen_kegg_pathways.txt' 
 chosen_pathways = open(path_to_chosen_pathways, 'rU')
 for line in chosen_pathways:
     # split creates a list out of the line
@@ -128,11 +130,11 @@ with open('chosen_pathways_genes.json', 'w') as outfile:#don't need to file.clos
 path_to_analysis = 'pathway_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
 
-headers = 'KEGG_Primary_class\tKEGG_secondary_class\tKEGG_pathway_ID\tpathway_name\t# genes in pathway\tgenes in cyto_nuc\t# genes in chosen\tgenes in HSA_background\t#genes in HSA_background\t%(chosen/HSA_background)\n'
+headers = 'KEGG_Primary_class\tKEGG_secondary_class\tKEGG_pathway_ID\tpathway_name\t# genes in pathway\tgenes in chosen\t# genes in chosen\tgenes in HSA_background\t#genes in HSA_background\t%(chosen/HSA_background)\n'
 pathway_analysis.write(headers)
 
 import json
-with open('cyto_nuc_pathways_genes.json') as f:
+with open('chosen_pathways_genes.json') as f:
     pathway_dict = json.load(f) #load (not loads, which is for string) does opposite of dumps
     for pathway_ID in pathway_dict:
         #find pathway name using TOGOWS API

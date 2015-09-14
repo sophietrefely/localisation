@@ -93,13 +93,13 @@ for entry in main_nuc_list:
 print('nuc_no_cyto_list:', len(nuc_no_cyto_list))
 
 #First extract the list of ENSG IDs into a .CSV file
-path_to_ENSG = 'cyto_no_nuc_ENSG_list.csv'
+path_to_ENSG = 'nuc_no_cyto_ENSG_list.csv'
 ENSG_file = open(path_to_ENSG, 'w') 
-for entry in cyto_no_nuc_list:
+for entry in nuc_no_cyto_list:
     ENSG = entry[0]
     item_to_write = ENSG + '\n'    #unsplits the list
     ENSG_file.write(item_to_write)
-ENSG_file.close() #There are 1196 genes
+ENSG_file.close() #There are 2803 nuc_no_cyto genes
 #The Reference list must be the entire list of genes in the human protein atlas
 #First must extract the IDs from HPA data:
 path_to_HPA = 'HPA_ENSG_complete_list.csv'
