@@ -93,9 +93,9 @@ for entry in main_nuc_list:
 print('nuc_no_cyto_list:', len(nuc_no_cyto_list))
 
 #First extract the list of ENSG IDs into a .CSV file
-path_to_ENSG = 'nuc_no_cyto_ENSG_list.csv'
+path_to_ENSG = 'nuc_cyto_ENSG_list.csv'
 ENSG_file = open(path_to_ENSG, 'w') 
-for entry in nuc_no_cyto_list:
+for entry in nuc_cyto_list:
     ENSG = entry[0]
     item_to_write = ENSG + '\n'    #unsplits the list
     ENSG_file.write(item_to_write)

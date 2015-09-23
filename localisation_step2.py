@@ -32,7 +32,7 @@ requests_cache.install_cache('stored_geneid_requests')
 
 #extract list of kegg ids from chosen list:
 chosen_kegg_list = []
-path_to_chosen = 'nuc_no_cyto_ENSG2KEGG.txt'
+path_to_chosen = 'cyto_no_nuc_ENSG2KEGG.txt'
 chosen_file = open(path_to_chosen, 'rU')
 for line in chosen_file:
     # split creates a list out of the line
@@ -175,6 +175,7 @@ with open('chosen_pathways_genes.json') as f:
         background_len_str = str(background_len)
         genes_in_background_str = str(genes_in_background)
         percent = str((chosen_len/background_len)*100)
+        
 
         item_to_write = primary_class+'\t'+secondary_class+'\t'+pathway_ID+'\t'+pathway_name+'\t'+pathway_len_str+'\t'+genes_in_chosen_str+'\t'+chosen_len_str+'\t'+genes_in_background_str+'\t'+background_len_str+'\t'+percent+'\n'
         pathway_analysis.write(item_to_write)

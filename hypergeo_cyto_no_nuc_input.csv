@@ -1,0 +1,270 @@
+pathway_name,# genes in chosen,#genes in HSA_background
+"  ""Valine, leucine and isoleucine biosynthesis - Homo sapiens (human)""",2,2
+"  ""Butirosin and neomycin biosynthesis - Homo sapiens (human)""",1,1
+"  ""Phenylalanine, tyrosine and tryptophan biosynthesis - Homo sapiens (human)""",1,1
+"  ""Linoleic acid metabolism - Homo sapiens (human)""",3,3
+"  ""Vitamin B6 metabolism - Homo sapiens (human)""",3,4
+"  ""Graft-versus-host disease - Homo sapiens (human)""",3,4
+"  ""Biotin metabolism - Homo sapiens (human)""",2,3
+"  ""Autoimmune thyroid disease - Homo sapiens (human)""",4,6
+"  ""Allograft rejection - Homo sapiens (human)""",3,5
+"  ""Ribosome - Homo sapiens (human)""",47,82
+"  ""Fatty acid biosynthesis - Homo sapiens (human)""",4,7
+"  ""alpha-Linolenic acid metabolism - Homo sapiens (human)""",3,6
+"  ""Steroid hormone biosynthesis - Homo sapiens (human)""",2,4
+"  ""Asthma - Homo sapiens (human)""",1,2
+"  ""Aminoacyl-tRNA biosynthesis - Homo sapiens (human)""",18,37
+"  ""Arachidonic acid metabolism - Homo sapiens (human)""",8,17
+"  ""African trypanosomiasis - Homo sapiens (human)""",6,13
+"  ""Alanine, aspartate and glutamate metabolism - Homo sapiens (human)""",9,20
+"  ""Carbohydrate digestion and absorption - Homo sapiens (human)""",3,7
+"  ""Folate biosynthesis - Homo sapiens (human)""",3,7
+"  ""Type II diabetes mellitus - Homo sapiens (human)""",7,17
+"  ""Insulin signaling pathway - Homo sapiens (human)""",31,76
+"  ""Renin-angiotensin system - Homo sapiens (human)""",2,5
+"  ""Drug metabolism - other enzymes - Homo sapiens (human)""",6,15
+"  ""Long-term depression - Homo sapiens (human)""",8,20
+"  ""Ubiquinone and other terpenoid-quinone biosynthesis - Homo sapiens (human)""",2,5
+"  ""Glycosaminoglycan degradation - Homo sapiens (human)""",2,5
+"  ""Vasopressin-regulated water reabsorption - Homo sapiens (human)""",10,25
+"  ""mTOR signaling pathway - Homo sapiens (human)""",16,41
+"  ""Fc gamma R-mediated phagocytosis - Homo sapiens (human)""",20,52
+"  ""Glutathione metabolism - Homo sapiens (human)""",11,29
+"  ""Type I diabetes mellitus - Homo sapiens (human)""",3,8
+"  ""Cysteine and methionine metabolism - Homo sapiens (human)""",10,27
+"  ""Hepatitis C - Homo sapiens (human)""",24,65
+"  ""Nicotinate and nicotinamide metabolism - Homo sapiens (human)""",4,11
+"  ""One carbon pool by folate - Homo sapiens (human)""",4,11
+"  ""Terpenoid backbone biosynthesis - Homo sapiens (human)""",4,11
+"  ""Cytokine-cytokine receptor interaction - Homo sapiens (human)""",25,69
+"  ""AMPK signaling pathway - Homo sapiens (human)""",23,64
+"  ""Histidine metabolism - Homo sapiens (human)""",5,14
+"  ""Protein export - Homo sapiens (human)""",5,14
+"  ""Measles - Homo sapiens (human)""",22,63
+"  ""Pentose phosphate pathway - Homo sapiens (human)""",8,23
+"  ""Glycolysis / Gluconeogenesis - Homo sapiens (human)""",11,32
+"  ""Central carbon metabolism in cancer - Homo sapiens (human)""",12,35
+"  ""Vascular smooth muscle contraction - Homo sapiens (human)""",15,44
+"  ""Natural killer cell mediated cytotoxicity - Homo sapiens (human)""",15,44
+"  ""Glycosylphosphatidylinositol(GPI)-anchor biosynthesis - Homo sapiens (human)""",3,9
+"  ""Riboflavin metabolism - Homo sapiens (human)""",1,3
+"  ""Aldosterone-regulated sodium reabsorption - Homo sapiens (human)""",4,12
+"  ""Mineral absorption - Homo sapiens (human)""",5,15
+"  ""Glycine, serine and threonine metabolism - Homo sapiens (human)""",7,21
+"  ""RIG-I-like receptor signaling pathway - Homo sapiens (human)""",11,33
+"  ""Starch and sucrose metabolism - Homo sapiens (human)""",4,12
+"  ""Glycosphingolipid biosynthesis - ganglio series - Homo sapiens (human)""",1,3
+"  ""Vitamin digestion and absorption - Homo sapiens (human)""",5,15
+"  ""Thiamine metabolism - Homo sapiens (human)""",1,3
+"  ""Epithelial cell signaling in Helicobacter pylori infection - Homo sapiens (human)""",14,43
+"  ""Inflammatory mediator regulation of TRP channels - Homo sapiens (human)""",11,34
+"  ""VEGF signaling pathway - Homo sapiens (human)""",11,34
+"  ""Thyroid hormone synthesis - Homo sapiens (human)""",10,31
+"  ""HIF-1 signaling pathway - Homo sapiens (human)""",18,56
+"  ""Lysosome - Homo sapiens (human)""",17,54
+"  ""Adipocytokine signaling pathway - Homo sapiens (human)""",11,35
+"  ""Jak-STAT signaling pathway - Homo sapiens (human)""",21,67
+"  ""Bacterial invasion of epithelial cells - Homo sapiens (human)""",15,48
+"  ""GABAergic synapse - Homo sapiens (human)""",5,16
+"  ""Fc epsilon RI signaling pathway - Homo sapiens (human)""",10,32
+"  ""Sphingolipid signaling pathway - Homo sapiens (human)""",17,55
+"  ""Selenocompound metabolism - Homo sapiens (human)""",4,13
+"  ""Serotonergic synapse - Homo sapiens (human)""",8,26
+"  ""Toll-like receptor signaling pathway - Homo sapiens (human)""",14,46
+"  ""RNA degradation - Homo sapiens (human)""",17,56
+"  ""Oxytocin signaling pathway - Homo sapiens (human)""",20,66
+"  ""Inositol phosphate metabolism - Homo sapiens (human)""",13,43
+"  ""ECM-receptor interaction - Homo sapiens (human)""",13,44
+"  ""Regulation of actin cytoskeleton - Homo sapiens (human)""",31,105
+"  ""PI3K-Akt signaling pathway - Homo sapiens (human)""",46,156
+"  ""Influenza A - Homo sapiens (human)""",25,85
+"  ""Glucagon signaling pathway - Homo sapiens (human)""",14,48
+"  ""Neuroactive ligand-receptor interaction - Homo sapiens (human)""",7,24
+"  ""Neurotrophin signaling pathway - Homo sapiens (human)""",23,79
+"  ""Phosphatidylinositol signaling system - Homo sapiens (human)""",16,55
+"  ""Nitrogen metabolism - Homo sapiens (human)""",2,7
+"  ""Chemical carcinogenesis - Homo sapiens (human)""",4,14
+"  ""Glioma - Homo sapiens (human)""",10,35
+"  ""Vibrio cholerae infection - Homo sapiens (human)""",8,28
+"  ""Galactose metabolism - Homo sapiens (human)""",4,14
+"  ""RNA transport - Homo sapiens (human)""",30,106
+"  ""Prolactin signaling pathway - Homo sapiens (human)""",11,39
+"  ""Acute myeloid leukemia - Homo sapiens (human)""",9,32
+"  ""Platelet activation - Homo sapiens (human)""",16,57
+"  ""ErbB signaling pathway - Homo sapiens (human)""",14,50
+"  ""Pathogenic Escherichia coli infection - Homo sapiens (human)""",7,25
+"  ""cAMP signaling pathway - Homo sapiens (human)""",19,68
+"  ""Apoptosis - Homo sapiens (human)""",12,43
+"  ""Focal adhesion - Homo sapiens (human)""",32,115
+"  ""T cell receptor signaling pathway - Homo sapiens (human)""",15,54
+"  ""NF-kappa B signaling pathway - Homo sapiens (human)""",15,54
+"  ""Prion diseases - Homo sapiens (human)""",5,18
+"  ""Gastric acid secretion - Homo sapiens (human)""",5,18
+"  ""Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate - Homo sapiens (human)""",3,11
+"  ""TNF signaling pathway - Homo sapiens (human)""",18,67
+"  ""cGMP-PKG signaling pathway - Homo sapiens (human)""",20,75
+"  ""Drug metabolism - cytochrome P450 - Homo sapiens (human)""",4,15
+"  ""Ras signaling pathway - Homo sapiens (human)""",24,90
+"  ""Choline metabolism in cancer - Homo sapiens (human)""",14,53
+"  ""Estrogen signaling pathway - Homo sapiens (human)""",14,53
+"  ""Endocrine and other factor-regulated calcium reabsorption - Homo sapiens (human)""",5,19
+"  ""B cell receptor signaling pathway - Homo sapiens (human)""",10,38
+"  ""Osteoclast differentiation - Homo sapiens (human)""",16,61
+"  ""Regulation of lipolysis in adipocytes - Homo sapiens (human)""",6,23
+"  ""Salmonella infection - Homo sapiens (human)""",13,50
+"  ""NOD-like receptor signaling pathway - Homo sapiens (human)""",8,31
+"  ""Rap1 signaling pathway - Homo sapiens (human)""",24,93
+"  ""Protein processing in endoplasmic reticulum - Homo sapiens (human)""",25,97
+"  ""Endocytosis - Homo sapiens (human)""",39,152
+"  ""Intestinal immune network for IgA production - Homo sapiens (human)""",2,8
+"  ""Arginine biosynthesis - Homo sapiens (human)""",2,8
+"  ""Insulin secretion - Homo sapiens (human)""",7,28
+"  ""Prostate cancer - Homo sapiens (human)""",14,56
+"  ""Rheumatoid arthritis - Homo sapiens (human)""",7,28
+"  ""Amoebiasis - Homo sapiens (human)""",12,48
+"  ""Phenylalanine metabolism - Homo sapiens (human)""",2,8
+"  ""Tryptophan metabolism - Homo sapiens (human)""",6,24
+"  ""Metabolism of xenobiotics by cytochrome P450 - Homo sapiens (human)""",4,16
+"  ""Non-small cell lung cancer - Homo sapiens (human)""",9,36
+"  ""Inflammatory bowel disease (IBD) - Homo sapiens (human)""",6,24
+"  ""Circadian entrainment - Homo sapiens (human)""",7,28
+"  ""Proteoglycans in cancer - Homo sapiens (human)""",28,113
+"  ""Shigellosis - Homo sapiens (human)""",10,41
+"  ""Cholinergic synapse - Homo sapiens (human)""",8,33
+"  ""Melanoma - Homo sapiens (human)""",8,33
+"  ""Thyroid hormone signaling pathway - Homo sapiens (human)""",16,67
+"  ""Chemokine signaling pathway - Homo sapiens (human)""",15,63
+"  ""Complement and coagulation cascades - Homo sapiens (human)""",5,21
+"  ""Malaria - Homo sapiens (human)""",5,21
+"  ""Gap junction - Homo sapiens (human)""",8,34
+"  ""Glyoxylate and dicarboxylate metabolism - Homo sapiens (human)""",4,17
+"  ""Propanoate metabolism - Homo sapiens (human)""",4,17
+"  ""Ether lipid metabolism - Homo sapiens (human)""",4,17
+"  ""Thyroid cancer - Homo sapiens (human)""",4,17
+"  ""Cytosolic DNA-sensing pathway - Homo sapiens (human)""",7,30
+"  ""Synaptic vesicle cycle - Homo sapiens (human)""",6,26
+"  ""GnRH signaling pathway - Homo sapiens (human)""",10,44
+"  ""Salivary secretion - Homo sapiens (human)""",5,22
+"  ""Purine metabolism - Homo sapiens (human)""",23,102
+"  ""Chagas disease (American trypanosomiasis) - Homo sapiens (human)""",11,49
+"  ""Tight junction - Homo sapiens (human)""",15,67
+"  ""Hepatitis B - Homo sapiens (human)""",19,85
+"  ""Glycerophospholipid metabolism - Homo sapiens (human)""",10,45
+"  ""Long-term potentiation - Homo sapiens (human)""",6,27
+"  ""Steroid biosynthesis - Homo sapiens (human)""",2,9
+"  ""Viral myocarditis - Homo sapiens (human)""",6,27
+"  ""Chronic myeloid leukemia - Homo sapiens (human)""",11,50
+"  ""Axon guidance - Homo sapiens (human)""",11,50
+"  ""Melanogenesis - Homo sapiens (human)""",9,41
+"  ""Amino sugar and nucleotide sugar metabolism - Homo sapiens (human)""",7,32
+"  ""Small cell lung cancer - Homo sapiens (human)""",12,55
+"  ""Epstein-Barr virus infection - Homo sapiens (human)""",27,126
+"  ""Ubiquitin mediated proteolysis - Homo sapiens (human)""",19,89
+"  ""Leukocyte transendothelial migration - Homo sapiens (human)""",10,47
+"  ""Glutamatergic synapse - Homo sapiens (human)""",7,33
+"  ""Adrenergic signaling in cardiomyocytes - Homo sapiens (human)""",11,52
+"  ""Toxoplasmosis - Homo sapiens (human)""",13,62
+"  ""Renal cell carcinoma - Homo sapiens (human)""",9,43
+"  ""Arginine and proline metabolism - Homo sapiens (human)""",5,24
+"  ""Pyruvate metabolism - Homo sapiens (human)""",5,24
+"  ""MicroRNAs in cancer - Homo sapiens (human)""",21,101
+"  ""p53 signaling pathway - Homo sapiens (human)""",10,49
+"  ""Calcium signaling pathway - Homo sapiens (human)""",12,59
+"  ""Oocyte meiosis - Homo sapiens (human)""",13,64
+"  ""Glycosaminoglycan biosynthesis - heparan sulfate / heparin - Homo sapiens (human)""",1,5
+"  ""Pantothenate and CoA biosynthesis - Homo sapiens (human)""",1,5
+"  ""Taste transduction - Homo sapiens (human)""",1,5
+"  ""Tyrosine metabolism - Homo sapiens (human)""",3,15
+"  ""Olfactory transduction - Homo sapiens (human)""",2,10
+"  ""Porphyrin and chlorophyll metabolism - Homo sapiens (human)""",3,15
+"  ""Alcoholism - Homo sapiens (human)""",10,50
+"  ""Phagosome - Homo sapiens (human)""",10,50
+"  ""Retinol metabolism - Homo sapiens (human)""",2,10
+"  ""Other glycan degradation - Homo sapiens (human)""",2,10
+"  ""MAPK signaling pathway - Homo sapiens (human)""",26,132
+"  ""mRNA surveillance pathway - Homo sapiens (human)""",10,52
+"  ""Herpes simplex infection - Homo sapiens (human)""",20,104
+"  ""Pathways in cancer - Homo sapiens (human)""",38,199
+"  ""Retrograde endocannabinoid signaling - Homo sapiens (human)""",4,21
+"  ""Tuberculosis - Homo sapiens (human)""",15,79
+"  ""Progesterone-mediated oocyte maturation - Homo sapiens (human)""",9,48
+"  ""Dopaminergic synapse - Homo sapiens (human)""",9,48
+"  ""beta-Alanine metabolism - Homo sapiens (human)""",3,16
+"  ""Ovarian steroidogenesis - Homo sapiens (human)""",2,11
+"  ""Primary immunodeficiency - Homo sapiens (human)""",2,11
+"  ""Fat digestion and absorption - Homo sapiens (human)""",2,11
+"  ""Morphine addiction - Homo sapiens (human)""",4,22
+"  ""Cocaine addiction - Homo sapiens (human)""",4,22
+"  ""Collecting duct acid secretion - Homo sapiens (human)""",2,11
+"  ""Hematopoietic cell lineage - Homo sapiens (human)""",4,22
+"  ""Hippo signaling pathway - Homo sapiens (human)""",15,83
+"  ""Hypertrophic cardiomyopathy (HCM) - Homo sapiens (human)""",5,28
+"  ""Pancreatic secretion - Homo sapiens (human)""",5,28
+"  ""Non-alcoholic fatty liver disease (NAFLD) - Homo sapiens (human)""",12,68
+"  ""TGF-beta signaling pathway - Homo sapiens (human)""",8,46
+"  ""Viral carcinogenesis - Homo sapiens (human)""",19,110
+"  ""Proteasome - Homo sapiens (human)""",6,35
+"  ""FoxO signaling pathway - Homo sapiens (human)""",13,77
+"  ""Dilated cardiomyopathy - Homo sapiens (human)""",5,30
+"  ""Ascorbate and aldarate metabolism - Homo sapiens (human)""",1,6
+"  ""Synthesis and degradation of ketone bodies - Homo sapiens (human)""",1,6
+"  ""Bladder cancer - Homo sapiens (human)""",4,24
+"  ""Maturity onset diabetes of the young - Homo sapiens (human)""",1,6
+"  ""Sulfur relay system - Homo sapiens (human)""",1,6
+"  ""Antigen processing and presentation - Homo sapiens (human)""",4,24
+"  ""Phototransduction - Homo sapiens (human)""",1,6
+"  ""Glycosaminoglycan biosynthesis - keratan sulfate - Homo sapiens (human)""",1,6
+"  ""Regulation of autophagy - Homo sapiens (human)""",2,12
+"  ""Legionellosis - Homo sapiens (human)""",5,31
+"  ""Amphetamine addiction - Homo sapiens (human)""",4,25
+"  ""Fructose and mannose metabolism - Homo sapiens (human)""",3,19
+"  ""Pertussis - Homo sapiens (human)""",6,38
+"  ""Staphylococcus aureus infection - Homo sapiens (human)""",2,13
+"  ""Hedgehog signaling pathway - Homo sapiens (human)""",3,20
+"  ""Renin secretion - Homo sapiens (human)""",3,20
+"  ""Amyotrophic lateral sclerosis (ALS) - Homo sapiens (human)""",4,27
+"  ""Endometrial cancer - Homo sapiens (human)""",5,34
+"  ""Cell adhesion molecules (CAMs) - Homo sapiens (human)""",7,48
+"  ""Alzheimer's disease - Homo sapiens (human)""",11,76
+"  ""Glycerolipid metabolism - Homo sapiens (human)""",4,28
+"  ""Arrhythmogenic right ventricular cardiomyopathy (ARVC) - Homo sapiens (human)""",4,28
+"  ""Dorso-ventral axis formation - Homo sapiens (human)""",2,14
+"  ""HTLV-I infection - Homo sapiens (human)""",19,138
+"  ""Pancreatic cancer - Homo sapiens (human)""",6,44
+"  ""Peroxisome - Homo sapiens (human)""",6,44
+"  ""Bile secretion - Homo sapiens (human)""",3,22
+"  ""PPAR signaling pathway - Homo sapiens (human)""",4,31
+"  ""Protein digestion and absorption - Homo sapiens (human)""",3,24
+"  ""Sphingolipid metabolism - Homo sapiens (human)""",2,17
+"  ""Signaling pathways regulating pluripotency of stem cells - Homo sapiens (human)""",9,78
+"  ""Adherens junction - Homo sapiens (human)""",6,53
+"  ""ABC transporters - Homo sapiens (human)""",2,18
+"  ""Wnt signaling pathway - Homo sapiens (human)""",8,73
+"  ""Valine, leucine and isoleucine degradation - Homo sapiens (human)""",3,28
+"  ""Notch signaling pathway - Homo sapiens (human)""",3,28
+"  ""SNARE interactions in vesicular transport - Homo sapiens (human)""",2,19
+"  ""Oxidative phosphorylation - Homo sapiens (human)""",6,59
+"  ""Circadian rhythm - Homo sapiens (human)""",2,20
+"  ""Mucin type O-Glycan biosynthesis - Homo sapiens (human)""",1,10
+"  ""Colorectal cancer - Homo sapiens (human)""",4,40
+"  ""N-Glycan biosynthesis - Homo sapiens (human)""",2,20
+"  ""Fanconi anemia pathway - Homo sapiens (human)""",4,40
+"  ""Pyrimidine metabolism - Homo sapiens (human)""",7,71
+"  ""Leishmaniasis - Homo sapiens (human)""",3,31
+"  ""Cell cycle - Homo sapiens (human)""",9,102
+"  ""Transcriptional misregulation in cancer - Homo sapiens (human)""",8,94
+"  ""Other types of O-glycan biosynthesis - Homo sapiens (human)""",1,12
+"  ""Basal cell carcinoma - Homo sapiens (human)""",2,24
+"  ""Huntington's disease - Homo sapiens (human)""",8,98
+"  ""Ribosome biogenesis in eukaryotes - Homo sapiens (human)""",4,50
+"  ""Base excision repair - Homo sapiens (human)""",2,25
+"  ""Butanoate metabolism - Homo sapiens (human)""",1,13
+"  ""Fatty acid degradation - Homo sapiens (human)""",2,26
+"  ""Parkinson's disease - Homo sapiens (human)""",4,58
+"  ""Systemic lupus erythematosus - Homo sapiens (human)""",1,19
+"  ""Cardiac muscle contraction - Homo sapiens (human)""",1,21
+"  ""Citrate cycle (TCA cycle) - Homo sapiens (human)""",1,24
+"  ""Basal transcription factors - Homo sapiens (human)""",1,29
+"  ""Nucleotide excision repair - Homo sapiens (human)""",1,32
+"  ""Lysine degradation - Homo sapiens (human)""",1,38
+"  ""Spliceosome - Homo sapiens (human)""",2,96
