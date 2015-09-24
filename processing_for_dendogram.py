@@ -1,5 +1,5 @@
 #process the pathway results to compare cyto_no_nuc, nuc_no_cyto and cyto_nuc transiting proteins.
-#From each dataset took the KEGG pathway name and %(chosen/HSA background) data in excel
+#From each dataset took the KEGG pathway name and p value from hypergeometric test data in excel
 
 #created text files containing just the pathways copy and pasted for each dataset with newlines between each.
 
@@ -35,7 +35,7 @@ complete_list.sort()
 print(complete_list[:5])
 
 #create a dataframe (list of lists) to illustrate all the data as below:
-#[[ID1, cyto_%, nuc_%, transit_%], [ID2, cyto_%, nuc_%, transit_%], [ID2, cyto_%, nuc_%, transit_%]…etc ..]
+#[[ID1, cyto_p, nuc_p, transit_p], [ID2, cyto_p, nuc_p, transit_p], [ID2, cyto_p, nuc_p, transit_p]…etc ..]
 
 #First load each dataset as a dictionary with key:value = pathway ID: percent
 def load_file_as_dict(filename):
