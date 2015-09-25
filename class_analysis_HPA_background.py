@@ -1,5 +1,11 @@
 #AIM: to find number of genes in each primary and secondary class of pathways in the HPA background list
 
+# NOTE(peter) this caches requests made with the 'requests' library in a local database
+import requests
+import requests_cache
+
+requests_cache.install_cache('stored_geneid_requests')
+
 #extract list of kegg gene ids from 'HPA_ENSG2KEGG'
 
 path_to_HPA_kegg_ids = 'HPA_kegg_ids.txt'
@@ -45,7 +51,7 @@ HPA_kegg_pathways.close()
 #make set to be unique pathways
 HPA_pathway_set = set()
 path_to_HPA_pathways = 'HPA_kegg_pathways.txt' 
-chosen_pathways = open(path_to_HPA_pathways, 'rU')
+HPA_pathways = open(path_to_HPA_pathways, 'rU')
 for line in HPA_pathways:
     # split creates a list out of the line
     # [0] is KEGG gene ID, [1] is KEGG pathway ID
@@ -54,7 +60,7 @@ for line in HPA_pathways:
     pathway = split_line[1]
     pathway_i = pathway.lstrip('path')#remove prefix to pathway id
     pathway_id = pathway_i.lstrip(':')
-    chosen_pathway_set.add(pathway_id)
+    HPA_pathway_set.add(pathway_id)
 HPA_unique_pathway_list = list(HPA_pathway_set)
 print('HPA_pathway_set:', len(HPA_pathway_set))
 print('HPA_unique_pathway_list:', len(HPA_unique_pathway_list))
@@ -91,11 +97,9 @@ with open('HPA_pathways_genes.json', 'w') as outfile:#don't need to file.close()
     outfile.write(dict_as_json)
 
 #find number of HPA background list genes in primary and secondary class
+#first create file with columns: KEGG_Primary_class, KEGG_secondary_class, HSA genes in pathway
 path_to_analysis = 'class_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
-
-headers = 'KEGG_Primary_class\tKEGG_secondary_class\tHSA genes in pathway\n'
-pathway_analysis.write(headers)
 
 import json
 with open('HPA_pathways_genes.json') as f:
@@ -111,7 +115,29 @@ with open('HPA_pathways_genes.json') as f:
         secondary_class = class_list[1]
         genes = pathway_gene_dict[pathway_ID]
         len_genes = str(len(genes))
-        print(len_genes)
-        item_to_write = primary_class'\t'secondary_class'\t'len_genes'\n'
+        item_to_write = primary_class+'\t'+secondary_class+'\t'+len_genes+'\n'
         pathway_analysis.write(item_to_write)
     pathway_analysis.close()
+
+#second, add up all the genes in each primary class pathway
+pathway_analysis_read = open(path_to_analysis, 'rU')
+
+#make cumulative dictionary; {class1:gene_number, etc}
+primary_dict = {}
+secondary_dict = {}
+for line in pathway_analysis_read:
+    stripped_line = line.rstrip()
+    split_line = stripped_line.split('\t')
+    primary_class = split_line[0]
+    secondary_class = split_line[1]
+    gene_number = int(split_line[2])
+    primary_dict[primary_class] = primary_dict.get(primary_class, 0) + gene_number
+    secondary_dict[secondary_class] = primary_dict.get(secondary_class, 0) + gene_number
+print('Primary class:')
+for entry in primary_dict:
+    print(entry+'\t'+str(primary_dict[entry]))
+print('Secondary class:')
+for entry in secondary_dict:
+    print(entry+'\t'+str(secondary_dict[entry]))
+
+#make dictionaries for other data sets in 'class_analysis_chosen.py'     

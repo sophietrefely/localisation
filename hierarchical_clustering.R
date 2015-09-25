@@ -48,8 +48,8 @@ heatmap.2(mat_data,
           density.info="none",  # turns off density plot inside color legend
           trace="none",         # turns off trace lines inside the heat map
           margins =c(12,12),     # widens margins around plot
-          col=my_palette,     # use on color palette defined earlier 
-          breaks=col_breaks,    # enable color transition at specified limits
+          col= my_palette,     # use on color palette defined earlier 
+          breaks= col_breaks,    # enable color transition at specified limits
           dendrogram="column",     # draw a row and column dendrogram
           Colv="NA")            # turn off column clustering
 

@@ -1,0 +1,289 @@
+Metabolism	Carbohydrate metabolism	56
+Metabolism	Carbohydrate metabolism	30
+Environmental Information Processing	Signal transduction	180
+Metabolism	Biosynthesis of other secondary metabolites	5
+Human Diseases	Cancers	66
+Organismal Systems	Digestive system	24
+Organismal Systems	Immune system	57
+Metabolism	Lipid metabolism	20
+Genetic Information Processing	Replication and repair	36
+Genetic Information Processing	Translation	172
+Human Diseases	Endocrine and metabolic diseases	26
+Environmental Information Processing	Signal transduction	84
+Environmental Information Processing	Signal transduction	134
+Organismal Systems	Endocrine system	69
+Human Diseases	Substance dependence	93
+Organismal Systems	Endocrine system	101
+Human Diseases	Endocrine and metabolic diseases	48
+Metabolism	Carbohydrate metabolism	28
+Organismal Systems	Nervous system	116
+Organismal Systems	Endocrine system	72
+Organismal Systems	Environmental adaptation	96
+Cellular Processes	Transport and catabolism	258
+Metabolism	Metabolism of other amino acids	51
+Human Diseases	Cancers	71
+Human Diseases	Infectious diseases	261
+Metabolism	Carbohydrate metabolism	32
+Environmental Information Processing	Signal transduction	140
+Metabolism	Energy metabolism	17
+Environmental Information Processing	Signal transduction	61
+Environmental Information Processing	Signal transduction	110
+Human Diseases	Cancers	89
+Metabolism	Metabolism of other amino acids	11
+Genetic Information Processing	Folding, sorting and degradation	10
+Human Diseases	Immune diseases	67
+Metabolism	Xenobiotics biodegradation and metabolism	45
+Human Diseases	Infectious diseases	34
+Organismal Systems	Circulatory system	121
+Metabolism	Glycan biosynthesis and metabolism	26
+Genetic Information Processing	Folding, sorting and degradation	34
+Genetic Information Processing	Transcription	45
+Metabolism	Glycan biosynthesis and metabolism	31
+Human Diseases	Immune diseases	39
+Metabolism	Nucleotide metabolism	175
+Metabolism	Lipid metabolism	44
+Organismal Systems	Development	131
+Metabolism	Carbohydrate metabolism	29
+Organismal Systems	Endocrine system	57
+Metabolism	Metabolism of cofactors and vitamins	20
+Organismal Systems	Digestive system	41
+Metabolism	Lipid metabolism	25
+Metabolism	Glycan biosynthesis and metabolism	25
+Metabolism	Metabolism of cofactors and vitamins	14
+Human Diseases	Cancers	66
+Organismal Systems	Nervous system	63
+Organismal Systems	Endocrine system	119
+Human Diseases	Infectious diseases	201
+Metabolism	Metabolism of other amino acids	1
+Genetic Information Processing	Replication and repair	33
+Organismal Systems	Nervous system	120
+Human Diseases	Cardiovascular diseases	74
+Metabolism	Carbohydrate metabolism	71
+Organismal Systems	Immune system	104
+Organismal Systems	Digestive system	75
+Metabolism	Amino acid metabolism	35
+Human Diseases	Cancers	179
+Organismal Systems	Excretory system	45
+Human Diseases	Cancers	73
+Cellular Processes	Cellular commiunity	138
+Organismal Systems	Endocrine system	70
+Human Diseases	Infectious diseases	120
+Human Diseases	Substance dependence	50
+Human Diseases	Infectious diseases	177
+Cellular Processes	Cellular commiunity	207
+Organismal Systems	Immune system	68
+Organismal Systems	Excretory system	23
+Metabolism	Amino acid metabolism	20
+Metabolism	Metabolism of cofactors and vitamins	18
+Human Diseases	Immune diseases	136
+Environmental Information Processing	Signaling molecules and interaction	87
+Human Diseases	Cancers	55
+Organismal Systems	Immune system	72
+Environmental Information Processing	Signal transduction	347
+Metabolism	Amino acid metabolism	35
+Human Diseases	Infectious diseases	75
+Human Diseases	Infectious diseases	57
+Metabolism	Metabolism of terpenoids and polyketides	22
+Organismal Systems	Immune system	106
+Organismal Systems	Nervous system	114
+Metabolism	Amino acid metabolism	4
+Organismal Systems	Immune system	49
+Cellular Processes	Transport and catabolism	123
+Metabolism	Glycan biosynthesis and metabolism	15
+Cellular Processes	Cellular commiunity	89
+Organismal Systems	Development	127
+Organismal Systems	Immune system	70
+Human Diseases	Endocrine and metabolic diseases	111
+Metabolism	Amino acid metabolism	5
+Organismal Systems	Digestive system	90
+Human Diseases	Cancers	81
+Environmental Information Processing	Signal transduction	211
+Genetic Information Processing	Replication and repair	47
+Cellular Processes	Transport and catabolism	155
+Human Diseases	Neurodegenerative diseases	51
+Organismal Systems	Sensory system	99
+Organismal Systems	Circulatory system	149
+Environmental Information Processing	Signal transduction	87
+Human Diseases	Infectious diseases	78
+Metabolism	Glycan biosynthesis and metabolism	24
+Organismal Systems	Digestive system	72
+Environmental Information Processing	Signal transduction	154
+Human Diseases	Infectious diseases	186
+Organismal Systems	Circulatory system	78
+Metabolism	Lipid metabolism	47
+Genetic Information Processing	Folding, sorting and degradation	77
+Metabolism	Metabolism of cofactors and vitamins	4
+Environmental Information Processing	Signal transduction	103
+Organismal Systems	Endocrine system	51
+Human Diseases	Infectious diseases	146
+Organismal Systems	Immune system	131
+Organismal Systems	Sensory system	53
+Human Diseases	Infectious diseases	68
+Environmental Information Processing	Signal transduction	52
+Metabolism	Amino acid metabolism	52
+Metabolism	Carbohydrate metabolism	28
+Metabolism	Metabolism of other amino acids	31
+Genetic Information Processing	Replication and repair	53
+Metabolism	Lipid metabolism	95
+Genetic Information Processing	Replication and repair	13
+Cellular Processes	Cell growth and death	124
+Genetic Information Processing	Translation	91
+Metabolism	Carbohydrate metabolism	48
+Metabolism	Glycan biosynthesis and metabolism	49
+Organismal Systems	Digestive system	45
+Cellular Processes	Cellular commiunity	142
+Metabolism	Glycan biosynthesis and metabolism	20
+Human Diseases	Infectious diseases	104
+Metabolism	Lipid metabolism	17
+Metabolism	Glycan biosynthesis and metabolism	18
+Metabolism	Carbohydrate metabolism	67
+Metabolism	Metabolism of cofactors and vitamins	6
+Organismal Systems	Sensory system	407
+Cellular Processes	Cell growth and death	68
+Human Diseases	Cancers	398
+Organismal Systems	Digestive system	96
+Organismal Systems	Endocrine system	86
+Human Diseases	Substance dependence	68
+Genetic Information Processing	Folding, sorting and degradation	23
+Cellular Processes	Cell growth and death	86
+Human Diseases	Infectious diseases	49
+Environmental Information Processing	Signaling molecules and interaction	265
+Human Diseases	Immune diseases	54
+Genetic Information Processing	Folding, sorting and degradation	137
+Organismal Systems	Nervous system	103
+Human Diseases	Neurodegenerative diseases	36
+Metabolism	Metabolism of cofactors and vitamins	42
+Organismal Systems	Endocrine system	159
+Metabolism	Amino acid metabolism	50
+Environmental Information Processing	Signal transduction	124
+Organismal Systems	Immune system	118
+Metabolism	Amino acid metabolism	40
+Organismal Systems	Environmental adaptation	31
+Human Diseases	Cancers	56
+Metabolism	Metabolism of other amino acids	7
+Metabolism	Amino acid metabolism	23
+Organismal Systems	Nervous system	131
+Genetic Information Processing	Translation	137
+Environmental Information Processing	Signal transduction	228
+Organismal Systems	Immune system	70
+Organismal Systems	Immune system	64
+Human Diseases	Cancers	41
+Metabolism	Metabolism of other amino acids	17
+Human Diseases	Immune diseases	36
+Human Diseases	Infectious diseases	55
+Metabolism	Carbohydrate metabolism	40
+Metabolism	Lipid metabolism	29
+Environmental Information Processing	Membrane transport	44
+Environmental Information Processing	Signal transduction	200
+Metabolism	Amino acid metabolism	17
+Human Diseases	Infectious diseases	177
+Metabolism	Carbohydrate metabolism	27
+Human Diseases	Cardiovascular diseases	90
+Metabolism	Lipid metabolism	23
+Genetic Information Processing	Replication and repair	29
+Organismal Systems	Endocrine system	65
+Organismal Systems	Endocrine system	81
+Metabolism	Lipid metabolism	25
+Metabolism	Xenobiotics biodegradation and metabolism	68
+Human Diseases	Cardiovascular diseases	83
+Metabolism	Glycan biosynthesis and metabolism	14
+Organismal Systems	Immune system	92
+Genetic Information Processing	Transcription	133
+Metabolism	Metabolism of cofactors and vitamins	11
+Metabolism	Glycan biosynthesis and metabolism	19
+Organismal Systems	Digestive system	51
+Environmental Information Processing	Signaling molecules and interaction	145
+Organismal Systems	Endocrine system	72
+Human Diseases	Infectious diseases	65
+Organismal Systems	Endocrine system	88
+Human Diseases	Endocrine and metabolic diseases	45
+Human Diseases	Cancers	86
+Human Diseases	Infectious diseases	74
+Metabolism	Metabolism of cofactors and vitamins	4
+Cellular Processes	Cellular commiunity	73
+Organismal Systems	Immune system	79
+Human Diseases	Immune diseases	32
+Metabolism	Lipid metabolism	62
+Metabolism	Lipid metabolism	59
+Human Diseases	Cancers	65
+Metabolism	Nucleotide metabolism	105
+Cellular Processes	Cell motility	215
+Human Diseases	Neurodegenerative diseases	193
+Metabolism	Energy metabolism	10
+Metabolism	Amino acid metabolism	47
+Human Diseases	Infectious diseases	109
+Human Diseases	Immune diseases	91
+Environmental Information Processing	Signal transduction	60
+Human Diseases	Immune diseases	43
+Genetic Information Processing	Translation	87
+Human Diseases	Infectious diseases	86
+Organismal Systems	Endocrine system	92
+Metabolism	Lipid metabolism	13
+Human Diseases	Infectious diseases	55
+Human Diseases	Cancers	62
+Metabolism	Energy metabolism	133
+Metabolism	Carbohydrate metabolism	30
+Organismal Systems	Excretory system	39
+Organismal Systems	Endocrine system	100
+Human Diseases	Cancers	29
+Human Diseases	Cardiovascular diseases	60
+Organismal Systems	Immune system	189
+Metabolism	Amino acid metabolism	38
+Human Diseases	Infectious diseases	134
+Metabolism	Lipid metabolism	10
+Human Diseases	Substance dependence	180
+Organismal Systems	Immune system	134
+Metabolism	Amino acid metabolism	40
+Organismal Systems	Digestive system	90
+Human Diseases	Cancers	101
+Organismal Systems	Excretory system	27
+Metabolism	Metabolism of cofactors and vitamins	3
+Organismal Systems	Sensory system	29
+Human Diseases	Cancers	204
+Metabolism	Lipid metabolism	58
+Environmental Information Processing	Signal transduction	167
+Genetic Information Processing	Folding, sorting and degradation	44
+Organismal Systems	Nervous system	90
+Human Diseases	Cancers	52
+Cellular Processes	Transport and catabolism	83
+Organismal Systems	Nervous system	113
+Human Diseases	Neurodegenerative diseases	168
+Organismal Systems	Nervous system	60
+Genetic Information Processing	Transcription	32
+Metabolism	Amino acid metabolism	2
+Organismal Systems	Endocrine system	140
+Human Diseases	Cancers	206
+Environmental Information Processing	Signal transduction	91
+Metabolism	Metabolism of cofactors and vitamins	65
+Organismal Systems	Endocrine system	102
+Human Diseases	Infectious diseases	133
+Cellular Processes	Cell growth and death	113
+Metabolism	Glycan biosynthesis and metabolism	15
+Organismal Systems	Excretory system	48
+Metabolism	Metabolism of cofactors and vitamins	29
+Cellular Processes	Transport and catabolism	39
+Metabolism	Carbohydrate metabolism	27
+Environmental Information Processing	Signal transduction	98
+Metabolism	Lipid metabolism	45
+Organismal Systems	Nervous system	67
+Genetic Information Processing	Folding, sorting and degradation	169
+Metabolism	Metabolism of cofactors and vitamins	3
+Metabolism	Carbohydrate metabolism	36
+Environmental Information Processing	Signaling molecules and interaction	275
+Genetic Information Processing	Replication and repair	23
+Environmental Information Processing	Signal transduction	257
+Metabolism	Glycan biosynthesis and metabolism	31
+Organismal Systems	Development	27
+Organismal Systems	Endocrine system	23
+Human Diseases	Cancers	57
+Environmental Information Processing	Signal transduction	48
+Environmental Information Processing	Signal transduction	120
+Environmental Information Processing	Signal transduction	156
+Human Diseases	Infectious diseases	54
+Organismal Systems	Immune system	87
+Metabolism	Xenobiotics biodegradation and metabolism	74
+Human Diseases	Cancers	297
+Human Diseases	Neurodegenerative diseases	143
+Human Diseases	Cancers	67
+Genetic Information Processing	Translation	66
+Human Diseases	Endocrine and metabolic diseases	151
