@@ -1,289 +1,289 @@
-Metabolism	Carbohydrate metabolism	56
-Metabolism	Carbohydrate metabolism	30
-Environmental Information Processing	Signal transduction	180
-Metabolism	Biosynthesis of other secondary metabolites	5
-Human Diseases	Cancers	66
-Organismal Systems	Digestive system	24
-Organismal Systems	Immune system	57
-Metabolism	Lipid metabolism	20
-Genetic Information Processing	Replication and repair	36
-Genetic Information Processing	Translation	172
-Human Diseases	Endocrine and metabolic diseases	26
-Environmental Information Processing	Signal transduction	84
-Environmental Information Processing	Signal transduction	134
-Organismal Systems	Endocrine system	69
-Human Diseases	Substance dependence	93
-Organismal Systems	Endocrine system	101
-Human Diseases	Endocrine and metabolic diseases	48
-Metabolism	Carbohydrate metabolism	28
-Organismal Systems	Nervous system	116
-Organismal Systems	Endocrine system	72
-Organismal Systems	Environmental adaptation	96
-Cellular Processes	Transport and catabolism	258
-Metabolism	Metabolism of other amino acids	51
-Human Diseases	Cancers	71
-Human Diseases	Infectious diseases	261
-Metabolism	Carbohydrate metabolism	32
-Environmental Information Processing	Signal transduction	140
-Metabolism	Energy metabolism	17
-Environmental Information Processing	Signal transduction	61
-Environmental Information Processing	Signal transduction	110
-Human Diseases	Cancers	89
-Metabolism	Metabolism of other amino acids	11
-Genetic Information Processing	Folding, sorting and degradation	10
-Human Diseases	Immune diseases	67
-Metabolism	Xenobiotics biodegradation and metabolism	45
-Human Diseases	Infectious diseases	34
-Organismal Systems	Circulatory system	121
-Metabolism	Glycan biosynthesis and metabolism	26
-Genetic Information Processing	Folding, sorting and degradation	34
-Genetic Information Processing	Transcription	45
-Metabolism	Glycan biosynthesis and metabolism	31
-Human Diseases	Immune diseases	39
-Metabolism	Nucleotide metabolism	175
-Metabolism	Lipid metabolism	44
-Organismal Systems	Development	131
-Metabolism	Carbohydrate metabolism	29
-Organismal Systems	Endocrine system	57
-Metabolism	Metabolism of cofactors and vitamins	20
-Organismal Systems	Digestive system	41
-Metabolism	Lipid metabolism	25
-Metabolism	Glycan biosynthesis and metabolism	25
-Metabolism	Metabolism of cofactors and vitamins	14
-Human Diseases	Cancers	66
-Organismal Systems	Nervous system	63
-Organismal Systems	Endocrine system	119
-Human Diseases	Infectious diseases	201
-Metabolism	Metabolism of other amino acids	1
-Genetic Information Processing	Replication and repair	33
-Organismal Systems	Nervous system	120
-Human Diseases	Cardiovascular diseases	74
-Metabolism	Carbohydrate metabolism	71
-Organismal Systems	Immune system	104
-Organismal Systems	Digestive system	75
-Metabolism	Amino acid metabolism	35
-Human Diseases	Cancers	179
-Organismal Systems	Excretory system	45
-Human Diseases	Cancers	73
-Cellular Processes	Cellular commiunity	138
-Organismal Systems	Endocrine system	70
-Human Diseases	Infectious diseases	120
-Human Diseases	Substance dependence	50
-Human Diseases	Infectious diseases	177
-Cellular Processes	Cellular commiunity	207
-Organismal Systems	Immune system	68
-Organismal Systems	Excretory system	23
-Metabolism	Amino acid metabolism	20
-Metabolism	Metabolism of cofactors and vitamins	18
-Human Diseases	Immune diseases	136
-Environmental Information Processing	Signaling molecules and interaction	87
-Human Diseases	Cancers	55
-Organismal Systems	Immune system	72
-Environmental Information Processing	Signal transduction	347
-Metabolism	Amino acid metabolism	35
-Human Diseases	Infectious diseases	75
-Human Diseases	Infectious diseases	57
-Metabolism	Metabolism of terpenoids and polyketides	22
-Organismal Systems	Immune system	106
-Organismal Systems	Nervous system	114
-Metabolism	Amino acid metabolism	4
-Organismal Systems	Immune system	49
-Cellular Processes	Transport and catabolism	123
-Metabolism	Glycan biosynthesis and metabolism	15
-Cellular Processes	Cellular commiunity	89
-Organismal Systems	Development	127
-Organismal Systems	Immune system	70
-Human Diseases	Endocrine and metabolic diseases	111
-Metabolism	Amino acid metabolism	5
-Organismal Systems	Digestive system	90
-Human Diseases	Cancers	81
-Environmental Information Processing	Signal transduction	211
-Genetic Information Processing	Replication and repair	47
-Cellular Processes	Transport and catabolism	155
-Human Diseases	Neurodegenerative diseases	51
-Organismal Systems	Sensory system	99
-Organismal Systems	Circulatory system	149
-Environmental Information Processing	Signal transduction	87
-Human Diseases	Infectious diseases	78
-Metabolism	Glycan biosynthesis and metabolism	24
-Organismal Systems	Digestive system	72
-Environmental Information Processing	Signal transduction	154
-Human Diseases	Infectious diseases	186
-Organismal Systems	Circulatory system	78
-Metabolism	Lipid metabolism	47
-Genetic Information Processing	Folding, sorting and degradation	77
-Metabolism	Metabolism of cofactors and vitamins	4
-Environmental Information Processing	Signal transduction	103
-Organismal Systems	Endocrine system	51
-Human Diseases	Infectious diseases	146
-Organismal Systems	Immune system	131
-Organismal Systems	Sensory system	53
-Human Diseases	Infectious diseases	68
-Environmental Information Processing	Signal transduction	52
-Metabolism	Amino acid metabolism	52
-Metabolism	Carbohydrate metabolism	28
-Metabolism	Metabolism of other amino acids	31
-Genetic Information Processing	Replication and repair	53
-Metabolism	Lipid metabolism	95
-Genetic Information Processing	Replication and repair	13
-Cellular Processes	Cell growth and death	124
-Genetic Information Processing	Translation	91
-Metabolism	Carbohydrate metabolism	48
-Metabolism	Glycan biosynthesis and metabolism	49
-Organismal Systems	Digestive system	45
-Cellular Processes	Cellular commiunity	142
-Metabolism	Glycan biosynthesis and metabolism	20
-Human Diseases	Infectious diseases	104
-Metabolism	Lipid metabolism	17
-Metabolism	Glycan biosynthesis and metabolism	18
-Metabolism	Carbohydrate metabolism	67
-Metabolism	Metabolism of cofactors and vitamins	6
-Organismal Systems	Sensory system	407
-Cellular Processes	Cell growth and death	68
-Human Diseases	Cancers	398
-Organismal Systems	Digestive system	96
-Organismal Systems	Endocrine system	86
-Human Diseases	Substance dependence	68
-Genetic Information Processing	Folding, sorting and degradation	23
-Cellular Processes	Cell growth and death	86
-Human Diseases	Infectious diseases	49
-Environmental Information Processing	Signaling molecules and interaction	265
-Human Diseases	Immune diseases	54
-Genetic Information Processing	Folding, sorting and degradation	137
-Organismal Systems	Nervous system	103
-Human Diseases	Neurodegenerative diseases	36
-Metabolism	Metabolism of cofactors and vitamins	42
-Organismal Systems	Endocrine system	159
-Metabolism	Amino acid metabolism	50
-Environmental Information Processing	Signal transduction	124
-Organismal Systems	Immune system	118
-Metabolism	Amino acid metabolism	40
-Organismal Systems	Environmental adaptation	31
-Human Diseases	Cancers	56
-Metabolism	Metabolism of other amino acids	7
-Metabolism	Amino acid metabolism	23
-Organismal Systems	Nervous system	131
-Genetic Information Processing	Translation	137
-Environmental Information Processing	Signal transduction	228
-Organismal Systems	Immune system	70
-Organismal Systems	Immune system	64
-Human Diseases	Cancers	41
-Metabolism	Metabolism of other amino acids	17
-Human Diseases	Immune diseases	36
-Human Diseases	Infectious diseases	55
-Metabolism	Carbohydrate metabolism	40
-Metabolism	Lipid metabolism	29
-Environmental Information Processing	Membrane transport	44
-Environmental Information Processing	Signal transduction	200
-Metabolism	Amino acid metabolism	17
-Human Diseases	Infectious diseases	177
-Metabolism	Carbohydrate metabolism	27
-Human Diseases	Cardiovascular diseases	90
-Metabolism	Lipid metabolism	23
-Genetic Information Processing	Replication and repair	29
-Organismal Systems	Endocrine system	65
-Organismal Systems	Endocrine system	81
-Metabolism	Lipid metabolism	25
-Metabolism	Xenobiotics biodegradation and metabolism	68
-Human Diseases	Cardiovascular diseases	83
-Metabolism	Glycan biosynthesis and metabolism	14
-Organismal Systems	Immune system	92
-Genetic Information Processing	Transcription	133
-Metabolism	Metabolism of cofactors and vitamins	11
-Metabolism	Glycan biosynthesis and metabolism	19
-Organismal Systems	Digestive system	51
-Environmental Information Processing	Signaling molecules and interaction	145
-Organismal Systems	Endocrine system	72
-Human Diseases	Infectious diseases	65
-Organismal Systems	Endocrine system	88
-Human Diseases	Endocrine and metabolic diseases	45
-Human Diseases	Cancers	86
-Human Diseases	Infectious diseases	74
-Metabolism	Metabolism of cofactors and vitamins	4
-Cellular Processes	Cellular commiunity	73
-Organismal Systems	Immune system	79
-Human Diseases	Immune diseases	32
-Metabolism	Lipid metabolism	62
-Metabolism	Lipid metabolism	59
-Human Diseases	Cancers	65
-Metabolism	Nucleotide metabolism	105
-Cellular Processes	Cell motility	215
-Human Diseases	Neurodegenerative diseases	193
-Metabolism	Energy metabolism	10
-Metabolism	Amino acid metabolism	47
-Human Diseases	Infectious diseases	109
-Human Diseases	Immune diseases	91
-Environmental Information Processing	Signal transduction	60
-Human Diseases	Immune diseases	43
-Genetic Information Processing	Translation	87
-Human Diseases	Infectious diseases	86
-Organismal Systems	Endocrine system	92
-Metabolism	Lipid metabolism	13
-Human Diseases	Infectious diseases	55
-Human Diseases	Cancers	62
-Metabolism	Energy metabolism	133
-Metabolism	Carbohydrate metabolism	30
-Organismal Systems	Excretory system	39
-Organismal Systems	Endocrine system	100
-Human Diseases	Cancers	29
-Human Diseases	Cardiovascular diseases	60
-Organismal Systems	Immune system	189
-Metabolism	Amino acid metabolism	38
-Human Diseases	Infectious diseases	134
-Metabolism	Lipid metabolism	10
-Human Diseases	Substance dependence	180
-Organismal Systems	Immune system	134
-Metabolism	Amino acid metabolism	40
-Organismal Systems	Digestive system	90
-Human Diseases	Cancers	101
-Organismal Systems	Excretory system	27
-Metabolism	Metabolism of cofactors and vitamins	3
-Organismal Systems	Sensory system	29
-Human Diseases	Cancers	204
-Metabolism	Lipid metabolism	58
-Environmental Information Processing	Signal transduction	167
-Genetic Information Processing	Folding, sorting and degradation	44
-Organismal Systems	Nervous system	90
-Human Diseases	Cancers	52
-Cellular Processes	Transport and catabolism	83
-Organismal Systems	Nervous system	113
-Human Diseases	Neurodegenerative diseases	168
-Organismal Systems	Nervous system	60
-Genetic Information Processing	Transcription	32
-Metabolism	Amino acid metabolism	2
-Organismal Systems	Endocrine system	140
-Human Diseases	Cancers	206
-Environmental Information Processing	Signal transduction	91
-Metabolism	Metabolism of cofactors and vitamins	65
-Organismal Systems	Endocrine system	102
-Human Diseases	Infectious diseases	133
-Cellular Processes	Cell growth and death	113
-Metabolism	Glycan biosynthesis and metabolism	15
-Organismal Systems	Excretory system	48
-Metabolism	Metabolism of cofactors and vitamins	29
-Cellular Processes	Transport and catabolism	39
-Metabolism	Carbohydrate metabolism	27
-Environmental Information Processing	Signal transduction	98
-Metabolism	Lipid metabolism	45
-Organismal Systems	Nervous system	67
-Genetic Information Processing	Folding, sorting and degradation	169
-Metabolism	Metabolism of cofactors and vitamins	3
-Metabolism	Carbohydrate metabolism	36
-Environmental Information Processing	Signaling molecules and interaction	275
-Genetic Information Processing	Replication and repair	23
-Environmental Information Processing	Signal transduction	257
-Metabolism	Glycan biosynthesis and metabolism	31
-Organismal Systems	Development	27
-Organismal Systems	Endocrine system	23
-Human Diseases	Cancers	57
-Environmental Information Processing	Signal transduction	48
-Environmental Information Processing	Signal transduction	120
-Environmental Information Processing	Signal transduction	156
-Human Diseases	Infectious diseases	54
-Organismal Systems	Immune system	87
-Metabolism	Xenobiotics biodegradation and metabolism	74
-Human Diseases	Cancers	297
-Human Diseases	Neurodegenerative diseases	143
-Human Diseases	Cancers	67
-Genetic Information Processing	Translation	66
-Human Diseases	Endocrine and metabolic diseases	151
+Human Diseases	Cancers	hsa05204
+Metabolism	Glycan biosynthesis and metabolism	hsa00531
+Human Diseases	Substance dependence	hsa05031
+Human Diseases	Infectious diseases	hsa05166
+Organismal Systems	Development	hsa04380
+Human Diseases	Infectious diseases	hsa05150
+Metabolism	Glycan biosynthesis and metabolism	hsa00604
+Organismal Systems	Endocrine system	hsa04915
+Metabolism	Metabolism of cofactors and vitamins	hsa00830
+Human Diseases	Immune diseases	hsa05310
+Organismal Systems	Environmental adaptation	hsa04710
+Genetic Information Processing	Folding, sorting and degradation	hsa04120
+Cellular Processes	Cell motility	hsa04810
+Organismal Systems	Immune system	hsa04612
+Human Diseases	Cancers	hsa05210
+Organismal Systems	Sensory system	hsa04742
+Organismal Systems	Circulatory system	hsa04261
+Metabolism	Metabolism of other amino acids	hsa00472
+Cellular Processes	Transport and catabolism	hsa04140
+Metabolism	Carbohydrate metabolism	hsa00630
+Human Diseases	Infectious diseases	hsa05160
+Organismal Systems	Nervous system	hsa04722
+Organismal Systems	Nervous system	hsa04724
+Metabolism	Metabolism of cofactors and vitamins	hsa00770
+Organismal Systems	Endocrine system	hsa04922
+Human Diseases	Cancers	hsa05205
+Environmental Information Processing	Signaling molecules and interaction	hsa04512
+Human Diseases	Infectious diseases	hsa05133
+Metabolism	Metabolism of cofactors and vitamins	hsa00130
+Human Diseases	Immune diseases	hsa05321
+Human Diseases	Cardiovascular diseases	hsa05414
+Cellular Processes	Cellular commiunity	hsa04550
+Organismal Systems	Endocrine system	hsa04914
+Metabolism	Glycan biosynthesis and metabolism	hsa00532
+Human Diseases	Infectious diseases	hsa05145
+Genetic Information Processing	Replication and repair	hsa03460
+Metabolism	Carbohydrate metabolism	hsa00500
+Organismal Systems	Environmental adaptation	hsa04713
+Genetic Information Processing	Folding, sorting and degradation	hsa03060
+Organismal Systems	Immune system	hsa04610
+Metabolism	Amino acid metabolism	hsa00330
+Metabolism	Amino acid metabolism	hsa00270
+Organismal Systems	Endocrine system	hsa03320
+Human Diseases	Endocrine and metabolic diseases	hsa04930
+Human Diseases	Cardiovascular diseases	hsa05416
+Metabolism	Carbohydrate metabolism	hsa00640
+Metabolism	Glycan biosynthesis and metabolism	hsa00511
+Organismal Systems	Immune system	hsa04062
+Organismal Systems	Endocrine system	hsa04916
+Metabolism	Metabolism of cofactors and vitamins	hsa00760
+Environmental Information Processing	Signaling molecules and interaction	hsa04060
+Organismal Systems	Circulatory system	hsa04260
+Organismal Systems	Digestive system	hsa04972
+Metabolism	Lipid metabolism	hsa00062
+Metabolism	Carbohydrate metabolism	hsa00562
+Metabolism	Amino acid metabolism	hsa00300
+Environmental Information Processing	Signal transduction	hsa04151
+Metabolism	Xenobiotics biodegradation and metabolism	hsa00982
+Metabolism	Carbohydrate metabolism	hsa00650
+Metabolism	Lipid metabolism	hsa00072
+Organismal Systems	Endocrine system	hsa04911
+Metabolism	Carbohydrate metabolism	hsa00040
+Human Diseases	Infectious diseases	hsa05164
+Genetic Information Processing	Replication and repair	hsa03440
+Cellular Processes	Cellular commiunity	hsa04540
+Organismal Systems	Excretory system	hsa04964
+Metabolism	Carbohydrate metabolism	hsa00020
+Metabolism	Carbohydrate metabolism	hsa00053
+Metabolism	Metabolism of other amino acids	hsa00480
+Metabolism	Metabolism of other amino acids	hsa00450
+Human Diseases	Substance dependence	hsa05030
+Metabolism	Carbohydrate metabolism	hsa00030
+Metabolism	Amino acid metabolism	hsa00340
+Cellular Processes	Cellular commiunity	hsa04520
+Environmental Information Processing	Signal transduction	hsa04310
+Metabolism	Carbohydrate metabolism	hsa00520
+Environmental Information Processing	Signal transduction	hsa04014
+Environmental Information Processing	Signal transduction	hsa04350
+Human Diseases	Cancers	hsa05222
+Genetic Information Processing	Folding, sorting and degradation	hsa04141
+Organismal Systems	Endocrine system	hsa04918
+Human Diseases	Infectious diseases	hsa05161
+Metabolism	Amino acid metabolism	hsa00380
+Human Diseases	Endocrine and metabolic diseases	hsa04932
+Genetic Information Processing	Translation	hsa03013
+Genetic Information Processing	Replication and repair	hsa03030
+Metabolism	Glycan biosynthesis and metabolism	hsa00533
+Metabolism	Lipid metabolism	hsa00061
+Human Diseases	Infectious diseases	hsa05146
+Metabolism	Carbohydrate metabolism	hsa00620
+Organismal Systems	Endocrine system	hsa04913
+Genetic Information Processing	Folding, sorting and degradation	hsa03018
+Human Diseases	Cancers	hsa05221
+Organismal Systems	Excretory system	hsa04962
+Genetic Information Processing	Replication and repair	hsa03450
+Environmental Information Processing	Signal transduction	hsa04071
+Human Diseases	Infectious diseases	hsa05100
+Environmental Information Processing	Signal transduction	hsa04068
+Environmental Information Processing	Signaling molecules and interaction	hsa04514
+Human Diseases	Infectious diseases	hsa05120
+Metabolism	Glycan biosynthesis and metabolism	hsa00534
+Metabolism	Carbohydrate metabolism	hsa00051
+Environmental Information Processing	Signal transduction	hsa04340
+Genetic Information Processing	Translation	hsa03010
+Cellular Processes	Transport and catabolism	hsa04145
+Organismal Systems	Endocrine system	hsa04917
+Organismal Systems	Digestive system	hsa04973
+Cellular Processes	Cell growth and death	hsa04110
+Organismal Systems	Nervous system	hsa04723
+Organismal Systems	Immune system	hsa04670
+Organismal Systems	Endocrine system	hsa04923
+Environmental Information Processing	Signal transduction	hsa04010
+Genetic Information Processing	Folding, sorting and degradation	hsa04130
+Metabolism	Lipid metabolism	hsa00590
+Organismal Systems	Endocrine system	hsa04912
+Cellular Processes	Transport and catabolism	hsa04146
+Environmental Information Processing	Signaling molecules and interaction	hsa04080
+Human Diseases	Cancers	hsa05214
+Organismal Systems	Endocrine system	hsa04910
+Cellular Processes	Transport and catabolism	hsa04144
+Metabolism	Amino acid metabolism	hsa00360
+Metabolism	Glycan biosynthesis and metabolism	hsa00514
+Human Diseases	Cancers	hsa05219
+Organismal Systems	Nervous system	hsa04721
+Organismal Systems	Digestive system	hsa04970
+Organismal Systems	Immune system	hsa04664
+Metabolism	Carbohydrate metabolism	hsa00052
+Organismal Systems	Immune system	hsa04622
+Metabolism	Glycan biosynthesis and metabolism	hsa00510
+Organismal Systems	Immune system	hsa04623
+Organismal Systems	Immune system	hsa04662
+Organismal Systems	Endocrine system	hsa04919
+Human Diseases	Neurodegenerative diseases	hsa05012
+Cellular Processes	Cell growth and death	hsa04114
+Metabolism	Carbohydrate metabolism	hsa00010
+Organismal Systems	Excretory system	hsa04966
+Organismal Systems	Nervous system	hsa04727
+Metabolism	Lipid metabolism	hsa00592
+Organismal Systems	Sensory system	hsa04744
+Organismal Systems	Immune system	hsa04620
+Human Diseases	Immune diseases	hsa05332
+Environmental Information Processing	Signal transduction	hsa04070
+Human Diseases	Cancers	hsa05212
+Environmental Information Processing	Signal transduction	hsa04390
+Metabolism	Glycan biosynthesis and metabolism	hsa00512
+Human Diseases	Cancers	hsa05216
+Metabolism	Nucleotide metabolism	hsa00230
+Organismal Systems	Nervous system	hsa04726
+Metabolism	Metabolism of other amino acids	hsa00430
+Human Diseases	Immune diseases	hsa05322
+Human Diseases	Cancers	hsa05231
+Metabolism	Lipid metabolism	hsa00140
+Metabolism	Metabolism of cofactors and vitamins	hsa00860
+Human Diseases	Cancers	hsa05206
+Human Diseases	Substance dependence	hsa05032
+Environmental Information Processing	Signal transduction	hsa04020
+Human Diseases	Endocrine and metabolic diseases	hsa04940
+Metabolism	Energy metabolism	hsa00910
+Metabolism	Amino acid metabolism	hsa00310
+Human Diseases	Cancers	hsa05215
+Metabolism	Amino acid metabolism	hsa00220
+Metabolism	Lipid metabolism	hsa00565
+Genetic Information Processing	Transcription	hsa03040
+Metabolism	Glycan biosynthesis and metabolism	hsa00603
+Human Diseases	Infectious diseases	hsa05134
+Cellular Processes	Transport and catabolism	hsa04142
+Cellular Processes	Cellular commiunity	hsa04510
+Metabolism	Metabolism of cofactors and vitamins	hsa00790
+Human Diseases	Immune diseases	hsa05320
+Human Diseases	Infectious diseases	hsa05140
+Organismal Systems	Immune system	hsa04621
+Metabolism	Lipid metabolism	hsa01040
+Genetic Information Processing	Folding, sorting and degradation	hsa03050
+Human Diseases	Infectious diseases	hsa05110
+Human Diseases	Neurodegenerative diseases	hsa05014
+Metabolism	Metabolism of cofactors and vitamins	hsa00780
+Metabolism	Amino acid metabolism	hsa00290
+Genetic Information Processing	Translation	hsa00970
+Organismal Systems	Development	hsa04320
+Metabolism	Metabolism of cofactors and vitamins	hsa00750
+Genetic Information Processing	Folding, sorting and degradation	hsa04122
+Environmental Information Processing	Signal transduction	hsa04066
+Metabolism	Amino acid metabolism	hsa00280
+Organismal Systems	Endocrine system	hsa04614
+Cellular Processes	Cell growth and death	hsa04210
+Organismal Systems	Nervous system	hsa04728
+Organismal Systems	Nervous system	hsa04725
+Human Diseases	Cancers	hsa05203
+Environmental Information Processing	Signal transduction	hsa04015
+Human Diseases	Infectious diseases	hsa05162
+Organismal Systems	Endocrine system	hsa04921
+Environmental Information Processing	Signal transduction	hsa04152
+Genetic Information Processing	Transcription	hsa03022
+Genetic Information Processing	Replication and repair	hsa03430
+Environmental Information Processing	Signal transduction	hsa04024
+Organismal Systems	Digestive system	hsa04976
+Metabolism	Metabolism of cofactors and vitamins	hsa00670
+Human Diseases	Cancers	hsa05217
+Metabolism	Metabolism of cofactors and vitamins	hsa00730
+Metabolism	Lipid metabolism	hsa00120
+Human Diseases	Infectious diseases	hsa05143
+Organismal Systems	Digestive system	hsa04978
+Metabolism	Biosynthesis of other secondary metabolites	hsa00524
+Cellular Processes	Cellular commiunity	hsa04530
+Metabolism	Lipid metabolism	hsa00100
+Environmental Information Processing	Signal transduction	hsa04012
+Environmental Information Processing	Signal transduction	hsa04668
+Human Diseases	Infectious diseases	hsa05169
+Human Diseases	Immune diseases	hsa05323
+Organismal Systems	Immune system	hsa04611
+Metabolism	Energy metabolism	hsa00190
+Environmental Information Processing	Signal transduction	hsa04064
+Human Diseases	Infectious diseases	hsa05132
+Human Diseases	Infectious diseases	hsa05152
+Organismal Systems	Excretory system	hsa04960
+Environmental Information Processing	Signal transduction	hsa04370
+Human Diseases	Neurodegenerative diseases	hsa05010
+Human Diseases	Cancers	hsa05220
+Organismal Systems	Excretory system	hsa04961
+Organismal Systems	Digestive system	hsa04974
+Organismal Systems	Nervous system	hsa04730
+Human Diseases	Cancers	hsa05200
+Organismal Systems	Immune system	hsa04666
+Metabolism	Metabolism of other amino acids	hsa00460
+Organismal Systems	Immune system	hsa04660
+Human Diseases	Cardiovascular diseases	hsa05412
+Metabolism	Glycan biosynthesis and metabolism	hsa00563
+Environmental Information Processing	Signal transduction	hsa04630
+Organismal Systems	Digestive system	hsa04971
+Human Diseases	Infectious diseases	hsa05130
+Genetic Information Processing	Replication and repair	hsa03420
+Metabolism	Xenobiotics biodegradation and metabolism	hsa00983
+Environmental Information Processing	Signal transduction	hsa04022
+Organismal Systems	Immune system	hsa04640
+Human Diseases	Infectious diseases	hsa05142
+Organismal Systems	Sensory system	hsa04740
+Human Diseases	Endocrine and metabolic diseases	hsa04950
+Human Diseases	Cancers	hsa05218
+Environmental Information Processing	Signal transduction	hsa04330
+Metabolism	Metabolism of cofactors and vitamins	hsa00740
+Genetic Information Processing	Translation	hsa03015
+Organismal Systems	Development	hsa04360
+Metabolism	Energy metabolism	hsa00920
+Human Diseases	Immune diseases	hsa05330
+Human Diseases	Substance dependence	hsa05034
+Human Diseases	Neurodegenerative diseases	hsa05016
+Organismal Systems	Immune system	hsa04672
+Organismal Systems	Digestive system	hsa04977
+Metabolism	Lipid metabolism	hsa00071
+Human Diseases	Infectious diseases	hsa05144
+Metabolism	Lipid metabolism	hsa00591
+Metabolism	Amino acid metabolism	hsa00350
+Organismal Systems	Immune system	hsa04650
+Genetic Information Processing	Replication and repair	hsa03410
+Human Diseases	Endocrine and metabolic diseases	hsa04931
+Metabolism	Amino acid metabolism	hsa00400
+Metabolism	Lipid metabolism	hsa00561
+Metabolism	Amino acid metabolism	hsa00260
+Human Diseases	Immune diseases	hsa05340
+Human Diseases	Cancers	hsa05230
+Human Diseases	Cancers	hsa05213
+Metabolism	Xenobiotics biodegradation and metabolism	hsa00980
+Organismal Systems	Circulatory system	hsa04270
+Human Diseases	Neurodegenerative diseases	hsa05020
+Human Diseases	Cancers	hsa05211
+Metabolism	Lipid metabolism	hsa00564
+Cellular Processes	Cell growth and death	hsa04115
+Organismal Systems	Sensory system	hsa04750
+Metabolism	Glycan biosynthesis and metabolism	hsa00601
+Organismal Systems	Nervous system	hsa04720
+Human Diseases	Cancers	hsa05223
+Human Diseases	Infectious diseases	hsa05131
+Organismal Systems	Digestive system	hsa04975
+Genetic Information Processing	Translation	hsa03008
+Metabolism	Amino acid metabolism	hsa00250
+Human Diseases	Infectious diseases	hsa05168
+Human Diseases	Cardiovascular diseases	hsa05410
+Metabolism	Metabolism of terpenoids and polyketides	hsa00900
+Environmental Information Processing	Signal transduction	hsa04150
+Organismal Systems	Endocrine system	hsa04920
+Metabolism	Metabolism of other amino acids	hsa00410
+Organismal Systems	Endocrine system	hsa04925
+Metabolism	Metabolism of cofactors and vitamins	hsa00785
+Metabolism	Nucleotide metabolism	hsa00240
+Organismal Systems	Endocrine system	hsa04924
+Environmental Information Processing	Membrane transport	hsa02010
+Genetic Information Processing	Transcription	hsa03020
+Human Diseases	Cancers	hsa05202
+Metabolism	Lipid metabolism	hsa00600

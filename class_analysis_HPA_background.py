@@ -96,8 +96,8 @@ with open('HPA_pathways_genes.json', 'w') as outfile:#don't need to file.close()
     dict_as_json = json.dumps(pathway_gene_dict) #dumps turns list into a json string
     outfile.write(dict_as_json)
 
-#find number of HPA background list genes in primary and secondary class
-#first create file with columns: KEGG_Primary_class, KEGG_secondary_class, HSA genes in pathway
+#find number of HPA background list pathways in primary and secondary class
+#first create file with columns: KEGG_Primary_class, KEGG_secondary_class, pathway
 path_to_analysis = 'class_analysis.txt'
 pathway_analysis = open(path_to_analysis, 'w')#write
 
@@ -115,11 +115,11 @@ with open('HPA_pathways_genes.json') as f:
         secondary_class = class_list[1]
         genes = pathway_gene_dict[pathway_ID]
         len_genes = str(len(genes))
-        item_to_write = primary_class+'\t'+secondary_class+'\t'+len_genes+'\n'
+        item_to_write = primary_class+'\t'+secondary_class+'\t'+pathway_ID+'\n'
         pathway_analysis.write(item_to_write)
     pathway_analysis.close()
 
-#second, add up all the genes in each primary class pathway
+#second, add up all the primary class pathways
 pathway_analysis_read = open(path_to_analysis, 'rU')
 
 #make cumulative dictionary; {class1:gene_number, etc}
@@ -130,9 +130,8 @@ for line in pathway_analysis_read:
     split_line = stripped_line.split('\t')
     primary_class = split_line[0]
     secondary_class = split_line[1]
-    gene_number = int(split_line[2])
-    primary_dict[primary_class] = primary_dict.get(primary_class, 0) + gene_number
-    secondary_dict[secondary_class] = primary_dict.get(secondary_class, 0) + gene_number
+    primary_dict[primary_class] = primary_dict.get(primary_class, 0) + 1
+    secondary_dict[secondary_class] = secondary_dict.get(secondary_class, 0) + 1
 print('Primary class:')
 for entry in primary_dict:
     print(entry+'\t'+str(primary_dict[entry]))
